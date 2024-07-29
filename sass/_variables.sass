@@ -1,0 +1,111 @@
+//間距
+$space-xxs: 2px
+$space-xs: 4px
+$space-sm: 8px
+$space-md: 12px
+$space-lg: 16px
+
+$space-xl: 20px
+$space-xxl: 24px
+$space-xxxl: 28px
+$space-xxxxl: 32px
+$space-xxxxxl: 36px
+
+a
+  text-decoration: none
+
+
+//@include
+@mixin scrolling--touch 
+  -webkit-overflow-scrolling: touch
+
+
+//ellipsis
+@mixin text-ellipsis 
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+
+//clearfix
+@mixin clearfix 
+  overflow: hidden
+
+
+//legacy-pie-clearfix
+@mixin legacy-pie-clearfix 
+  &:after 
+    content: ' '
+    display: block
+    line-height: 0
+    height: 0
+    font-size: 0
+    visibility: hidden
+    clear: both
+  
+
+
+//vertical
+@mixin after-v 
+  &:after 
+    content: ''
+    width: 0
+    height: 100%
+    display: inline-block
+    position: relative
+    vertical-align: middle
+  
+
+
+@mixin table-v 
+  display: table-cell
+  vertical-align: middle
+
+
+// @include position-v(0, 0, 0, 0)
+@mixin position-v($top, $right, $bottom, $left) 
+  position: absolute
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+  margin: auto
+
+
+//border
+// @include border(0.5, 0, 0, 0, 0, solid, #ccc)
+@mixin border($width, $top, $right, $bottom, $left, $style, $color) 
+  position: relative
+
+  &:after 
+    content: ''
+    pointer-events: none
+    box-sizing: border-box
+    position: absolute
+    top: -50%
+    right: -50%
+    bottom: -50%
+    left: -50%
+    transform: scale($width)
+    border-top-width: ($top * 2) + px
+    border-right-width: ($right * 2) + px
+    border-bottom-width: ($bottom * 2) + px
+    border-left-width: ($left * 2) + px
+    border-style: $style
+    border-color: $color
+  
+
+
+@mixin wap-view 
+  @media (min-width: 560px) 
+    max-width: 414px
+    margin: 0 auto
+  
+
+
+@mixin animation-order($name: zoomIn,$duration: 700ms,$fill-mode: both,$timing-function: ease-in-out,$delay: 100ms) 
+    animation-name: $name
+    animation-duration: $duration
+    animation-fill-mode: $fill-mode
+    animation-timing-function: $timing-function
+    animation-delay: calc(var(--animation-order) * #{$delay})
