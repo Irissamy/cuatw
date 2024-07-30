@@ -7,26 +7,16 @@
   z-index: 1000
   flex-direction: column
   overflow-y: auto
-  background: linear-gradient(to bottom,#f3f4f7 10%,#f3f4f7 10%,#f3f4f7 80%)
-  &:before 
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    z-index: 3
-    width: 100%
-    height: 44px
-    background: linear-gradient(to bottom,#f3f4f7 50%,rgba(#f3f4f7, 0.8) 70%,rgba(#f3f4f7, 0.1) 100%)
-  
+  background-image: url('../images/common/demo/index/index-bg.png')
+  background-size: cover
+  background-repeat: no-repeat
   .entry-brand 
     display: flex
     flex-direction: column
     align-items: center
     width: 100%
-    padding-top: 44px
     padding-bottom: $space-md
-    padding: 44px $space-xxxxl $space-md
+    padding: $space-xxxxl $space-xxxxl $space-md
     &__logo 
       height: 58px
       .logo-icon 
@@ -61,11 +51,11 @@
         width: 1%
         height: 1px
         flex-grow: 1
-        background: linear-gradient(o right,#d4bba1 1%,#f8e9d8 99%)
+        background: linear-gradient(to right,#d4bba1 1%,#f8e9d8 99%)
   &__content 
     flex: 1
     overflow-y: auto
-    background-image: url('../images/common/demo/login/registered_wappage.png')
+    //background-image: url('../images/common/demo/login/registered_wappage.png')
     background-size: 100%
     background-position: left bottom
     background-repeat: no-repeat

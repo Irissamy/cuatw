@@ -19,6 +19,26 @@ $bod-circle: 50%
 a
   text-decoration: none
 
+input,
+select 
+  outline-color: invert
+  outline-style: none
+  outline-width: 0px
+  border: none
+  border-style: none
+  text-shadow: none
+  appearance: none
+  user-select: text
+  outline-color: transparent
+  box-shadow: none
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+
+input[type='number'] 
+  -moz-appearance: textfield
+
 
 //@include
 @mixin scrolling--touch 
@@ -340,3 +360,29 @@ a
   font-size: 12px
   color: #3B3538
   font-weight: 500
+
+@mixin input-placholder 
+  color: #909abb
+  caret-color: #d4bba1
+  font-size: 16px
+  &:-webkit-autofill 
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset
+    background-color: transparent
+  &::-webkit-input-placeholder 
+    color: #b4bacf
+    font-size: 16px
+    @content
+
+  &:-moz-placeholder 
+    color: #b4bacf
+    font-size: 16px
+    @content
+  &::-o-placeholder 
+    color: #b4bacf
+    font-size: 16px
+    @content
+
+  &:-ms-input-placeholder 
+    color: #b4bacf
+    font-size: 16px
+    @content
