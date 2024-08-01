@@ -29,6 +29,21 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+body {
+  height: 100vh;
+  background-image: none;
+}
+
+@media screen and (min-width: 575px) {
+  body {
+    background-image: url('../images/common/image/Bet365_bg_4_b.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .dropdown.filter {
+    max-width: 300px;
+  }
+}
 .main-content {
   position: relative;
   display: flex;
@@ -60,6 +75,8 @@ input[type='number'] {
   bottom: 0;
   left: 0;
   margin: auto;
+  max-width: 576px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -75,7 +92,7 @@ input[type='number'] {
 }
 .layout-content.-index {
   background-image: url('../images/common/demo/index/index-bg.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -130,6 +147,7 @@ input[type='number'] {
   bottom: 0;
   left: 0;
   margin: auto;
+  max-width: 576px;
   z-index: 1700;
   border-radius: 20px 20px 0 0;
   background: linear-gradient(to bottom, #21357b 0%, #3c61e1 50%, #21357b 100%);
