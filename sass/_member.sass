@@ -1,0 +1,468 @@
+.member-center 
+  &__user-m 
+    display: flex
+    flex-direction: column
+    // padding: 16px 0px 50px
+    .user-m__icon 
+      display: flex
+      background-image: url('../images/common/image/member_login_bg@2x.png')
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 78px
+      position: relative
+      &__avatar 
+        width: 68px
+        height: 68px
+        border-radius: $bod-circle
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        overflow: hidden
+      
+      &__img 
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+      
+      &__upload-icon,
+      &__input 
+        position: absolute
+        right: 0
+        bottom: 0
+        width: 26px
+        height: 26px
+      
+      &__input 
+        opacity: 0
+        background-color: transparent
+      
+    
+    .user-m__name 
+      font-size: 16px
+      font-weight: 600
+      color: #515561
+      text-align: center
+    
+    .user-m__info 
+      position: relative
+      min-height: 54px
+      padding-top: $space-sm
+      .info-list 
+        padding: 0
+        margin: 0
+        list-style: none
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__item 
+          display: flex
+          align-items: center
+          padding-top: $space-lg
+          &:first-child 
+            padding-top: 0
+          
+
+          .list-btn 
+            color: #515561
+            font-size: 11px
+            display: inline-block
+            background-color: hsla(0,0%,100%,0.4)
+            padding: $space-xs $space-sm
+            border-radius: 11px
+            margin: 0 $space-sm
+            white-space: nowrap
+          
+          .list-text 
+            font-size: 14px
+            color: #515561
+            display: flex
+            align-items: center
+            white-space: nowrap
+            &.price 
+              display: flex
+              max-width: 160px
+              background-color: hsla(0,0%,100%,0.4)
+              padding: $space-xxs $space-sm $space-xxs $space-xxs
+              border-radius: 11px
+              font-weight: 500
+              overflow: hidden
+              white-space: nowrap
+              .price-text 
+                font-weight: 500
+                overflow: hidden
+                white-space: nowrap
+                text-overflow: ellipsis
+              
+              .price-img 
+                width: 16px
+                height: 16px
+                margin-right: $space-xs
+                mask-image: url('../images/common/icon/icon_deposit_money@2x.png')
+                mask-size: contain
+                mask-position: center
+                mask-repeat: no-repeat
+                background-color: #515561
+              
+            
+          
+        
+        &__lt 
+          justify-content: flex-end
+        
+        &__rt 
+          justify-content: flex-start
+        
+        .refresh 
+          width: 24px
+          height: 24px
+          mask: url('../images/common/icon/icon_refresh@2x.png') no-repeat center center
+          mask-size: contain
+          background-color: #515561
+          margin-left: $space-sm
+          &--active 
+            animation: refresh 0.8s infinite linear
+          
+        
+      
+    
+  
+  .inner-content 
+    top: 230px
+  
+
+.member-menu-top 
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  position: relative
+  background-image: url('../images/common/image/vip_bg@2x.png')
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  margin: 10px $space-lg 0
+  // filter: drop-shadow(0 0 20px #ffffff80)
+  border-radius: 8px
+  z-index: 1
+
+  &__item 
+    display: flex
+    align-items: center
+    width: 100%
+    overflow: hidden
+    position: relative
+    padding: $space-md
+    justify-content: center
+    & + .member-menu-top__item:after 
+      content: ''
+      display: block
+      height: 20px
+      width: 1px
+      background-color: #d4bba1
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      // border-right: 1px solid #f5ca9f
+    
+    .menu-img-wrap 
+      display: flex
+      flex-shrink: 0
+      width: 40px
+      height: 40px
+      margin-right: $space-sm
+      &__img         
+        display: block
+        width: 100%
+        margin: auto
+        position: relative
+        z-index: 1
+      
+    
+    .menu-title 
+      text-align: left
+      color: #515561
+      font-size: 14px
+      font-weight: 600
+      margin: 0
+    
+  
+
+  .member-menu-top-bg 
+    // background-image: linear-gradient(to bottom, #ba7b53, #ffe1c3)
+    width: 100%
+    border-radius: $bod-default
+    position: relative
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: space-between
+    // &:before 
+    //   content: ''
+    //   display: block
+    //   width: 160%
+    //   height: 130px
+    //   background-image: linear-gradient(
+    //     180deg,
+    //     rgb(255, 255, 255),
+    //     rgba(255, 209, 177, 0.2)
+    //   )
+    //   border-radius: $bod-circle
+    //   position: absolute
+    //   bottom: 0
+    //   margin: auto
+    //   left: 50%
+    //   transform: translateX(-50%) translateY(-30%)
+    // 
+  
+
+  .member-menu-top-border 
+    width: 100%
+    // padding: 1px
+    // border-radius: $bod-default
+    // box-shadow: 0 0 15px 0 rgba(208, 138, 87, 0.3), inset 0 6px 10px -5px white
+    // background-image: linear-gradient(
+    //   50deg,
+    //   white 0%,
+    //   #ffffff6c 12%,
+    //   #ffffff74 27%,
+    //   #ffffff5c 40%,
+    //   #ffffff 55%,
+    //   #ffffff7d 72%,
+    //   #ffffff8a 82%,
+    //   #ffffff7e 92%,
+    //   white 100%
+    // )
+  
+
+
+.member-menu-bottom 
+  display: flex
+  flex-direction: column
+  flex: 1
+  overflow-y: auto
+  .ui-tableviewcell,
+  .entry-btn,
+  .version 
+    margin: 0px (-$space-lg)
+  
+
+// .member-menu-bottom 
+//   display: flex
+//   justify-content: flex-start
+//   flex-wrap: wrap
+//   padding: $space-lg
+//   &__item 
+//     display: block
+//     flex: 1 1 25%
+//     max-width: 25%
+//     padding-top: 12px
+//     padding-bottom: 12px
+//     @include animation-order(bounceIn, 700ms, both, ease-in-out, 30ms)
+//     &__img 
+//       display: block
+//       width: 46px
+//       margin: auto
+//     
+//     &__title 
+//       text-align: center
+//       color: $brand-font-color
+//       font-size: 15px
+//       margin: 0
+//       padding-top: 4px
+//     
+//   
+// 
+.img-board 
+  height: 176px - 44px * 2
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50%
+  position: relative
+
+  &--auto 
+    height: auto
+  
+
+  &__logo 
+    text-align: center
+    width: 100%
+    padding: $space-lg + $space-xxxxl + $space-lg 0 $space-xxxxl
+    display: flex
+    flex-direction: column
+    text-align: center
+    justify-content: center
+    &__img 
+      width: 148px
+      margin: 0 auto
+    
+    &__text 
+      color: #ffe4b5
+      font-size: 14px
+      padding-top: $space-md
+      margin: 0
+    
+  
+
+  .btn-tab 
+    width: 100%
+    display: flex
+    &__item 
+      width: 100%
+      min-width: 80px
+      color: white
+      border-right: 0
+      line-height: 45px
+      display: block
+      text-align: center
+      font-size: 16px
+      position: relative
+      &--active 
+        color: white
+        &:after 
+          content: ''
+          display: block
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          margin: auto
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 6px 10px 6px
+          border-color: transparent transparent #ffe1c3 transparent
+        
+      
+    
+  
+
+.float-element 
+  width: 100%
+  height: 75px
+  background-color: var(--brand-color-bg-bg-2)
+  position: relative
+  margin-bottom: -20px
+
+  .alert 
+    max-width: max-content
+    margin: 0 auto
+    padding:$space-md
+    &__img 
+      margin-right: $space-sm
+      &__icon 
+        width: 34px
+        height: 34px
+
+        mask-position: center
+        mask-size: contain
+        mask-repeat: no-repeat
+      
+    
+    &.alert-warning 
+      .alert__img__icon 
+        mask-image: url('../images/common/icon/icon_deposit_money@2x.png')
+        background-color: #d4bba1
+      
+    
+    &__text 
+      font-size: 12px
+      font-weight: 500
+      line-height: normal
+      color: #909abb
+    
+  
+
+
+// .member-ui-tableviewcell 
+//   margin-top: 16px
+//   &:first-child 
+//     margin-top: 12px
+//   
+//   .ui-tableviewcell 
+//     &:last-child 
+//       .ui-tableviewcell__text 
+//         border-bottom: none
+//       
+//     
+//   
+// 
+// .member-tableviewcell 
+//   padding: 0px 16px
+//   margin-top: 16px
+//   background-color: #ffe8d4
+//   &__cell 
+//     display: flex
+//     align-items: center
+//     padding: 8px 0px
+//     border-bottom: 1px solid #7864641a
+//     .cell-img 
+//       width: 30px
+//       &__icon 
+//         display: block
+//         width: 100%
+//       
+//     
+//     .cell-info 
+//       flex: 1
+//       padding: 0px 8px
+//       &__title 
+//         font-size: 14px
+//         font-weight: 500
+//         color: $brand-font-color
+//       
+//     
+//     .cell-icon 
+//       width: 16px
+//       height: 18px
+//       background-image: url('~@design/demo/member/06IconAIcBack@2x.png')
+//       background-size: contain
+//       background-position: center
+//       background-repeat: no-repeat
+//     
+//     &:last-child 
+//       border-bottom: none
+//     
+//   
+//   &:first-child 
+//     margin-top: 12px
+//   
+// 
+.entry-btn 
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-shrink: 0
+  height: 46px
+  padding: 0px $space-sm
+  margin-top: $space-lg
+  background-color: var(--brand-color-normal-white)
+  &__text 
+    font-size: 14px
+    font-weight: 500
+    color: #515561
+  
+
+.version 
+  display: flex
+  flex-shrink: 0
+  margin-top: auto
+  padding-top: $space-sm
+  &__info 
+    min-width: 77px
+    height: 22px
+    padding: 0px $space-lg
+    background-color: var(--brand-color-normal-white)
+    border-radius: $bod-round 0px 0px $bod-round
+    margin-left: auto
+    .info-text 
+      font-size: 14px
+      font-weight: 500
+      color: #909abb
+      line-height: 22px
+    
+  
+
