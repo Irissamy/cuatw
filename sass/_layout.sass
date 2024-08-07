@@ -80,6 +80,8 @@
   &.-region 
     overflow-y: auto
   
+.inner-bg 
+  background-color: #f3f4f7
 
 
 //雙欄格局,版型特殊處理
@@ -208,6 +210,56 @@ $region2: 225px
       .item-text 
         color: #EBE4C1
       
+.com-inner 
+  display: flex
+  flex: 1
+  flex-direction: column
+  overflow-y: auto
+  padding-bottom: 44px
+
+  &__content 
+    // display: flex
+    // flex-direction: column
+    // overflow-y: auto
+    padding: $space-lg $space-lg $space-lg + 16px
+
+    & + .com-inner__content-footer 
+      padding: 0 $space-lg $space-xxxxl
+    
+
+    &.-scroll 
+      overflow-y: auto
+    
+  
+
+  &__content-footer 
+    // display: flex
+    // flex-direction: column
+    padding: $space-xxxxl 0 0
+
+    .btn + .btn 
+      margin-top: $space-lg
+    
+  
+
+  //component特殊組合
+  .tab 
+    flex: none
+  
+
+  .tab + .com-inner__content,
+  .mywallet-filter + .com-inner__content,
+  .order-filter + .com-inner__content,
+  .order-filter + .order-info-list + .com-inner__content 
+    display: flex
+    flex-direction: column
+    overflow-y: auto
+  
+  .mywallet-filter + .com-inner__content,
+  .order-filter + .com-inner__content,
+  .order-filter + .order-info-list + .com-inner__content 
+    flex: 1
+  
     
   
 
