@@ -374,63 +374,6 @@
       line-height: normal
       color: #909abb
     
-  
-
-
-// .member-ui-tableviewcell 
-//   margin-top: 16px
-//   &:first-child 
-//     margin-top: 12px
-//   
-//   .ui-tableviewcell 
-//     &:last-child 
-//       .ui-tableviewcell__text 
-//         border-bottom: none
-//       
-//     
-//   
-// 
-// .member-tableviewcell 
-//   padding: 0px 16px
-//   margin-top: 16px
-//   background-color: #ffe8d4
-//   &__cell 
-//     display: flex
-//     align-items: center
-//     padding: 8px 0px
-//     border-bottom: 1px solid #7864641a
-//     .cell-img 
-//       width: 30px
-//       &__icon 
-//         display: block
-//         width: 100%
-//       
-//     
-//     .cell-info 
-//       flex: 1
-//       padding: 0px 8px
-//       &__title 
-//         font-size: 14px
-//         font-weight: 500
-//         color: $brand-font-color
-//       
-//     
-//     .cell-icon 
-//       width: 16px
-//       height: 18px
-//       background-image: url('~@design/demo/member/06IconAIcBack@2x.png')
-//       background-size: contain
-//       background-position: center
-//       background-repeat: no-repeat
-//     
-//     &:last-child 
-//       border-bottom: none
-//     
-//   
-//   &:first-child 
-//     margin-top: 12px
-//   
-// 
 .entry-btn 
   display: flex
   justify-content: center
@@ -439,7 +382,7 @@
   height: 46px
   padding: 0px $space-sm
   margin-top: $space-lg
-  background-color: var(--brand-color-normal-white)
+  background-color: #ffffff
   &__text 
     font-size: 14px
     font-weight: 500
@@ -455,7 +398,7 @@
     min-width: 77px
     height: 22px
     padding: 0px $space-lg
-    background-color: var(--brand-color-normal-white)
+    background-color: #ffffff
     border-radius: $bod-round 0px 0px $bod-round
     margin-left: auto
     .info-text 
@@ -463,6 +406,108 @@
       font-weight: 500
       color: #909abb
       line-height: 22px
+    
+  
+//內頁user狀態共用
+.inner-user 
+  padding: 0 $space-lg
+  &__user-m 
+    display: flex
+    align-items: center
+    .user-m__icon 
+      width: 76px
+      height: 76px
+      background-color: hsla(0,0%,100%,0.4)
+      padding: $space-xs
+      border-radius: $bod-circle
+      margin-right: $space-sm
+      .icon-img 
+        width: 68px
+        height: 68px
+        display: block
+        border-radius: $bod-circle
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        overflow: hidden
+      
+    
+    .user-m__name 
+      font-size: 16px
+      font-weight: 600
+      color: #515561
+      text-align: left
+      padding: $space-xs 0px
+      padding-right: $space-sm
+    
+  
+  &__info 
+    position: relative
+    .info-list 
+      padding: 0
+      margin: 0
+      list-style: none
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      &__item 
+        display: flex
+        align-items: center
+        padding-bottom: $space-xs
+        &:last-child 
+          padding-bottom: 0
+        
+        .list-btn 
+          color: #515561
+          font-size: 11px
+          display: inline-block
+          background-color: hsla(0,0%,100%,0.4)
+          padding: $space-xs $space-sm
+          border-radius: 11px
+          margin: 0 $space-sm
+        
+        .list-text 
+          font-size: 13px
+          color: #515561
+          display: flex
+          align-items: center
+          &.price 
+            display: flex
+            background-color: hsla(0,0%,100%,0.4)
+            padding: 0px $space-sm 0px $space-xxs
+            border-radius: 11px
+            font-weight: 500
+            .price-img 
+              width: 24px
+              height: 24px
+              margin-right: $space-xs
+              mask-image: url('../images/common/image/icon/icon_money@2x.png')
+              mask-size: contain
+              mask-position: center
+              mask-repeat: no-repeat
+              background-color: #515561
+            
+          
+        
+      
+      &__lt 
+        justify-content: flex-end
+      
+      &__rt 
+        justify-content: flex-start
+      
+    
+  
+  .refresh 
+    width: 24px
+    height: 24px
+    mask: url('../images/common/image/icon/icon_refresh@2x.png') no-repeat center center
+    mask-size: contain
+    background-color: #515561
+    margin-left: $space-sm
+    &--active 
+      animation: refresh 0.8s infinite linear
     
   
 

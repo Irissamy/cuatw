@@ -260,7 +260,54 @@ $region2: 225px
   .order-filter + .order-info-list + .com-inner__content 
     flex: 1
   
-    
+.navimg-up-board 
+  position: relative
+  z-index: 1000
+  &:before 
+    content: ''
+    width: 100%
+    height: 176px - 44px
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    margin: auto
+    background-image: url('../images/common/image/header.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
   
+.layout-fixed 
+  position: absolute
+  top: 0
+  right: 0
+  margin: auto
+  transition: 0.4s
+  z-index: 1800
+
+.layout-fab 
+  position: fixed
+  bottom: 24px
+  right: 24px
+  z-index: 1040
+
+
+.tab,
+.-scrollable 
+  & + .com-inner 
+    display: flex
+    flex-direction: column
+    flex: 1
+  
+
+
+.img-board + .com-inner__content 
+  padding: 0
+  display: flex
+  flex: 1
+  flex-direction: column
+  overflow-y: auto
+  padding: $space-lg $space-lg $space-lg + 16px
+
 
 
