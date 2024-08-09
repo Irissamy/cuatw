@@ -38,7 +38,7 @@
         margin: 0
       
       &__title 
-        color: var(--brand-color-tertiary-saturation)
+        color: #515561
         font-weight: 600
         font-size: 16px
         min-height: 20px
@@ -69,7 +69,7 @@
   padding: $space-sm $space-sm 0 $space-sm
   &__item 
     min-height: 64px
-    border-bottom: 1px solid var(--brand-color-secondary-default-opacit)
+    border-bottom: 1px solid rgba(255,200,97,0.25)
     padding: $space-sm $space-lg
     display: flex
     flex-direction: column
@@ -77,7 +77,6 @@
     position: relative
     &--disabled 
       cursor: not-allowed
-      // filter: grayscale(1)
     
     &:last-child 
       border-bottom: 0
@@ -87,8 +86,6 @@
       .el-radio-style 
         align-self: flex-start
       
-    
-
     .el-radio-label 
       width: 100%
       font-size: 16px
@@ -98,16 +95,10 @@
         display: flex
         align-items: center
       
-    
-
     .pay-info 
       padding: $space-xs 0 0
       .pay-info__text + .pay-info__text-danger 
         padding-bottom: 0px
-      
-    
-  
-
 
 .pay 
   &__step 
@@ -117,16 +108,15 @@
     
     .pay-info 
       padding-bottom: 0
-    
-    //pay-title
+
     .pay-title 
       margin: 0
-      padding-bottom: $space-lg
+      padding-bottom: $space-sm
       display: flex
       justify-content: space-between
       align-items: center
       &__text 
-        color: var(--brand-color-tertiary-saturation)
+        color: #515561
         font-weight: 600
         display: flex
         .text-number 
@@ -134,7 +124,6 @@
         
         .text-red 
           color: #ff3d3d
-        
       
       .intro 
         display: flex
@@ -144,7 +133,7 @@
           flex-shrink: 0
           width: 24px
           height: 24px
-          mask-image: url('~@design/icon/icon_tutorial@2x.png')
+          mask-image: url('../images/common/image/icon/icon_tutorial@2x.png')
           mask-size: contain
           mask-position: center
           mask-repeat: no-repeat
@@ -156,8 +145,6 @@
           padding-left: $space-xs
           font-weight: 600
         
-      
-    
     .cell__form 
       border: 1px solid #ffffff
       &--disabled 
@@ -167,14 +154,11 @@
       
       &--invalid 
         border: 1px solid #ff3d3d
-      
-    
 
     //cell__bank
     .cell__bank 
       display: flex
       flex-direction: column
-    
 
     //cell__form-item
     .cell__form-item 
@@ -197,7 +181,6 @@
         &__number 
           display: none
         
-
         &--disabled 
           opacity: 0.8
           color: #909abb
@@ -210,11 +193,6 @@
             font-size: 14px
             display: inline-block
             opacity: 1 !important
-          
-        
-      
-    
-  
 
   //btn
   .btn-event 
@@ -229,22 +207,18 @@
     border: none
     height: 28px
   
-
   //com-cell--pay.page
   .com-cell 
     padding: 0
   
   .com-cell + .com-cell 
     padding-top: $space-sm
-  
-
 
 .com-cell + .amount-list 
   padding-top: $space-sm
 
 .amount-list + .com-cell 
   padding-top: $space-sm
-
 
 //amount-list
 .amount-list 
@@ -258,14 +232,13 @@
     height: 34px
     line-height: 34px
     background-color: #ffffff
-    border-radius: $bod-default / 2
+    border-radius: 4px
     margin: 0 2% 2% 0
     text-align: center
 
     &:nth-child(4n) 
       margin-right: 0
     
-
     .item-text 
       font-size: 12px
       color: #909abb
@@ -276,17 +249,12 @@
 
       .item-text 
         color: #ffffff
-      
-    
+
     &--disabled 
       cursor: not-allowed
       background-color: #eceef4
       .item-text 
         color: #909abb
-      
-    
-  
-
 
 //pay-info--獨立
 .pay-info 
@@ -310,8 +278,6 @@
       &:last-child 
         padding-right: 0px
       
-    
-  
   &__text-danger 
     color: #ff3d3d
     margin: 0
@@ -321,7 +287,6 @@
     .pay-info__text 
       color: #ff3d3d
     
-  
   .text-danger 
     color: #ff3d3d
   
@@ -332,8 +297,6 @@
     line-height: 19px
     font-size: 12px
   
-
-
 .pay-info__text + .pay-info__text-danger 
   padding-bottom: $space-lg
 
