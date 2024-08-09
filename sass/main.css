@@ -9851,10 +9851,24 @@ div::-webkit-scrollbar {
   padding: 0 8px;
 }
 .withdraw-bank__info .info-bank {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 600;
   margin: 0;
   padding-bottom: 8px;
+}
+.withdraw-bank__info .info-bank__title {
+  font-size: 14px;
+  color: #515561;
+  white-space: nowrap;
+  margin: 0;
+}
+.withdraw-bank__info .info-bank__txt {
+  padding-left: 4px;
+  font-size: 12px;
+  color: #909abb;
+  font-weight: 400;
 }
 .withdraw-bank__info .info-account {
   width: 100%;
@@ -9986,9 +10000,7 @@ div::-webkit-scrollbar {
   font-size: 12px;
   padding: 4px 16px;
   color: #909abb;
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .withdraw-detailed .table .tr .td:first-child {
   font-weight: 600;
