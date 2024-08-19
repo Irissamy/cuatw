@@ -215,3 +215,165 @@
   &__title
     font-size: 28px
     color: #26FFBE
+
+.alert 
+  display: flex
+  align-items: center
+  padding: $space-md 0
+  &.alert-danger 
+    color: #ff3d3d
+    .alert__img__icon 
+      mask-image: url('../images/common/image/icon/icon_warning@2x.png')
+      background-color: #ff3d3d
+    
+  
+  &.alert-warning 
+    .alert__img__icon 
+      mask-image: url('../images/common/image/icon/icon_mistake@2x.png')
+      background-color: #fc0
+    
+  
+  &__img 
+    margin-right: $space-xs
+    &__icon 
+      display: block
+      width: 24px
+      height: 24px
+      mask-size: contain
+      mask-position: center
+      mask-repeat: no-repeat
+    
+  
+  &__text 
+    font-size: 14px
+    color: #515561
+    font-weight: 600
+  
+
+  &__text-info 
+    font-size: 12px
+    line-height: normal
+    color: #ff3d3d
+  
+//無資料
+.empty 
+  width: 100%
+  .empty-content 
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 50px $space-lg 0
+    .empty-icon 
+      width: 100px
+      height: 100px
+      display: block
+      mask-image: url('../images/common/image/icon/icon_nodata@2x.png')
+      mask-size: contain
+      mask-position: center
+      mask-repeat: no-repeat
+      background-color: #909abb
+    
+    .empty-title 
+      text-align: center
+      font-size: 14px
+      font-weight: 400
+      color: #909abb
+      line-height: 1.5
+
+//出款充值狀態
+.badge 
+  display: flex
+  align-items: center
+  font-size: 12px
+  font-weight: 500
+  border-radius: $bod-round
+  min-width: 76px
+  height: 20px
+  padding-left: $space-xxs
+  padding-right: $space-sm
+  &:before 
+    content: ''
+    width: 14px
+    height: 14px
+    display: block
+    mask-repeat: no-repeat
+    mask-size: contain
+    mask-position: center
+  
+  &__text 
+    margin: 0 auto
+  
+  &--success 
+    color: #06c170
+    background-color: rgba(6,193,112,0.1)
+    &:before 
+      mask-image: url('../images/common/image/icon/icon_success@2x.png')
+      background-color: #06c170
+    
+  
+  &--danger 
+    color: #ff3d3d
+    background-color: rgba(255,61,61,0.1)
+    &:before 
+      mask-image: url('../images/common/image/icon/icon_fail@2x.png')
+      background-color: #ff3d3d
+    
+  
+  &--warning 
+    color: #fc0
+    background-color: rgba(255,204,0,0.1)
+    &:before 
+      mask-image: url('../images/common/image/icon/icon_mistake@2x.png')
+      background-color: #fc0
+    
+  
+  &--transfer 
+    color: #3d8eff
+    background-color: rgba(61,142,255,0.1)
+    &:before 
+      mask-image: url('../images/common/image/icon/icon_success@2x.png')
+      background-color: #3d8eff
+
+.editor-content 
+  word-wrap: break-word
+  word-break: break-all
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 
+    margin: 0px 0px 8px 0px
+    // color: #ad0522
+  
+  h4 
+    font-size: 16px
+    font-weight: normal
+    margin: 8px 0
+  
+  hr 
+    border: 0
+    // border-top: 1px solid #e8c7ae
+    margin: 0
+    height: 0px
+  
+  p,
+  div 
+    font-size: 12px
+    line-height: 19px
+    margin-top: 0
+
+    &:last-child 
+      margin-bottom: 0
+    
+  
+  img 
+    width: 100%
+    display: block
+  
+  ul
+    padding-left: 16px
+    li  
+      list-style: none 
+  
+ 

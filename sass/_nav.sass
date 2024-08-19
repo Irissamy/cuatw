@@ -239,7 +239,50 @@
     &__icon 
       height: 16px
     
+.glow-bg 
+  position: relative
+  overflow: hidden
+  // &:before 
+  //   content: ''
+  //   background: radial-gradient(
+  //     circle at 50% $nav-h * 1.5,
+  //     #ffffff 0%,
+  //     #ffffff 72%,
+  //     #ffffff 100%
+  //   )
+  //   width: 100%
+  //   height: inherit
+  //   @include position-v(0, 0, 0, 0)
+  // 
+  &:before 
+    content: ''
+    width: 100%
+    height: inherit
+    background-image: url('../images/common/image/status_bg.png')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    @include position-v(0, 0, 0, 0)
   
+
+
+.glow-bg-radius 
+  width: 100%
+  height: 133px
+  // background: radial-gradient(
+  //   circle at 50% 123px * 1.5,
+  //   #ffffff 0%,
+  //   #ffffff 72%,
+  //   #ffffff 100%
+  // )
+  background-image: url('../images/common/image/status_bg.png')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  border-radius: 0 0 0 40px
+  overflow: hidden
+  @include position-v(0, 0, auto, 0)
+ 
 
 //member-nav背景
 .navimg-board 
