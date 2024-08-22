@@ -18,7 +18,7 @@
 <body>
   <div class="layout-main">
     <!-- 公告中心popup -->
-    <div id="promotions" class="popup" style="display: none;">
+    <div id="promotions" class="popup">
       <div class="popup-mask">
         <!--popup-->
         <div class="bulletin-popup">
@@ -68,7 +68,7 @@
               </div>
             </div>
           </div>
-          <a class="bulletin-close" href="javascript:void(0);">
+          <a class="bulletin-close" href="javascript:void(0);" onclick="showPromotions()">
             <img src="images/common/demo/popup/close_up@2x.png" class="bulletin-close__img" alt="" />
           </a>
         </div>
@@ -415,6 +415,14 @@
     });
     function showLang() {
       var popup = document.getElementById('show');
+      if (popup.style.display === 'none') {
+        popup.style.display = 'block';
+      } else {
+        popup.style.display = 'none';
+      }
+    }
+    function showPromotions() {
+      var popup = document.getElementById('promotions');
       if (popup.style.display === 'none') {
         popup.style.display = 'block';
       } else {
