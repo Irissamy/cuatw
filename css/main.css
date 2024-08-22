@@ -2632,6 +2632,14 @@ div::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-position: center;
 }
+.layout-content.-fix-float .com-inner__content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.layout-content.-fix-float .float-element {
+  margin-bottom: 0px;
+}
 .layout-content--full {
   padding-bottom: 0;
   margin-bottom: 0;
@@ -12806,11 +12814,6 @@ div::-webkit-scrollbar {
   transition: 0.4s;
 }
 
-.wcr-footer {
-  flex-direction: column;
-  padding: 0px 8px;
-}
-
 .wcr-stock {
   width: 100%;
   white-space: normal;
@@ -12878,16 +12881,16 @@ div::-webkit-scrollbar {
 }
 
 .wcr-footer {
+  display: flex;
+  align-items: center;
   width: 100%;
   min-height: 56px;
-  align-items: center;
-  display: flex;
+  padding: 0px 8px;
   background-color: #ffffff;
 }
 
-.wcr-input-close {
+.wcr-input {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 12px 16px;
@@ -12895,9 +12898,19 @@ div::-webkit-scrollbar {
   border-radius: 1000px;
   background-color: #eceef4;
 }
-.wcr-input-close__text {
+.wcr-input__text,
+.wcr-input__input {
+  width: 100%;
   font-size: 14px;
   color: #b4bacf;
+  background: transparent;
+}
+
+.wcr-btn {
+  width: auto;
+  white-space: nowrap;
+  padding: 0px 16px;
+  margin-left: 12px;
 }
 
 .message-close + .wcr-footer {

@@ -552,17 +552,6 @@
     margin-right: -12px
     transform: scale(1) rotate(0)
     transition: 0.4s
-  
-
-
-//style1--end
-
-//style2
-.wcr-footer 
-  flex-direction: column
-  padding: 0px 8px
-
-
 
 .wcr-stock 
   width: 100%
@@ -621,26 +610,31 @@
             color: #b4bacf
 
 .wcr-footer 
+  display: flex
+  align-items: center
   width: 100%
   min-height: 56px
-  align-items: center
-  display: flex
+  padding: 0px 8px
   background-color: #ffffff
-  // background-image: linear-gradient(to top, #eff2f5, $bg-theme)
-  // border-top: 1px solid #dadada
 
-.wcr-input-close 
+.wcr-input
   display: flex
-  justify-content: center
   align-items: center
   width: 100%
   padding: 12px 16px
   margin: 12px 0px
   border-radius: $bod-round
   background-color: #eceef4
-  &__text 
+  &__text,&__input
+    width: 100%
     font-size: 14px
     color: #b4bacf
+    background: transparent
+.wcr-btn
+  width: auto
+  white-space: nowrap
+  padding: 0px 16px
+  margin-left: 12px
   
 
 .message-close + .wcr-footer 
