@@ -86,11 +86,24 @@
           </div>
         </div>
         <div class="header__rt">
-          <a href="javascript:void(0);" class="header-icon">
-            <div class="header-icon__icon">
-              <img class="icon-img" src="images/common/image/icon_menu@2x.png" alt="">
-            </div>
+          <a href="javascript:void(0);" class="header-icon" onclick="showLang()">
+            <div class="header-icon__icon-img"></div>
           </a>
+          <ul id="show" class="lang-list" style="display: none;">
+            <li class="lang-list__item lang-list__item--active">
+              <!-- <img src="images/common/image/icon/icon_exclamation-gold@2x.png" alt="" class="item-check"> -->
+              <span class="item-title">繁體中文</span>
+            </li>
+            <li class="lang-list__item">
+              <span class="item-title">English</span>
+            </li>
+            <li class="lang-list__item">
+              <span class="item-title">简体中文</span>
+            </li>
+            <li class="lang-list__item">
+              <span class="item-title">Tiếng việt</span>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -400,6 +413,14 @@
         }
       }]
     });
+    function showLang() {
+      var popup = document.getElementById('show');
+      if (popup.style.display === 'none') {
+        popup.style.display = 'block';
+      } else {
+        popup.style.display = 'none';
+      }
+    }
   </script>
 </body>
 

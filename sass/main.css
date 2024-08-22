@@ -3383,6 +3383,65 @@ div::-webkit-scrollbar {
   display: block;
   vertical-align: middle;
 }
+.header__rt .header-icon__icon-img {
+  width: 24px;
+  height: 24px;
+  -webkit-mask-image: url("../images/common/image/icon/icon_earth@2x.png");
+          mask-image: url("../images/common/image/icon/icon_earth@2x.png");
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: linear-gradient(to right, #FDEED1 0%, #f5cb9b 100%);
+}
+.header .lang-list {
+  position: absolute;
+  top: 44px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.7019607843);
+  list-style: none;
+  margin: 0px;
+  padding: 16px;
+  z-index: 1;
+}
+.header .lang-list__item {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.header .lang-list__item .item-title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.header .lang-list__item .item-title::before {
+  content: "";
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+  background-image: url("../images/common/image/icon/icon_exclamation-gold@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .lang-list__item .item-check {
+  display: block;
+  width: 20px;
+}
+.header .lang-list__item:last-child {
+  padding-bottom: 0px;
+}
+.header .lang-list__item--active .item-title {
+  font-weight: 600;
+  color: #f5cb9b;
+}
+.header .lang-list__item--active .item-title::before {
+  display: block;
+}
 
 .nav {
   width: 100%;
@@ -8601,7 +8660,7 @@ div::-webkit-scrollbar {
 .core-functional .user-info__id {
   font-size: 14px;
   font-weight: 600;
-  color: #515561;
+  color: rgba(255, 255, 255, 0.6);
   padding-bottom: 6px;
 }
 .core-functional .user-info__wallet {
