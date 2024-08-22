@@ -40,7 +40,7 @@
     .btn-return 
       .img 
         mask-image: url('../images/common/image/icon/icon_picker_left@2x.png')
-        background-color: #515561
+        background-color: #ffffff
       
     
   
@@ -70,7 +70,7 @@
     justify-content: center
     font-size: 18px
     font-weight: 600
-    color: #515561
+    color: #ffffff
     position: absolute
     top: 0
     right: 0
@@ -97,7 +97,7 @@
     
     .logo-text 
       font-size: 18px
-      color: #515561
+      color: #ffffff
     
   
 
@@ -160,7 +160,7 @@
   .file 
     &__icon 
       mask-image: url('../images/common/image/icon/ic_imfo@2x.png')
-      background-color: #515561
+      background-color: #ffffff
     
   
 
@@ -256,15 +256,10 @@
   // 
   &:before 
     content: ''
+    @include position-v(0, 0, 0, 0)
     width: 100%
     height: inherit
-    background-image: url('../images/common/image/status_bg.png')
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    @include position-v(0, 0, 0, 0)
-  
-
+    background: transparent linear-gradient(180deg, #1d3b72 0%,#1e3f76 48%,#1c458b 69%,#22659f 86%,#3c61e1 96%,#3c61e1 98%,#274174 100%)
 
 .glow-bg-radius 
   width: 100%
@@ -297,7 +292,7 @@
     right: 0
     left: 0
     margin: auto
-    background-image: url('../images/common/image/header.png')
+    background-image: url('../images/common/image/header-1.png')
     background-size: 100%
     background-repeat: no-repeat
     background-position: center
@@ -314,7 +309,7 @@
     right: 0
     left: 0
     margin: auto
-    background-image: url('../images/common/image/header.png')
+    background-image: url('../images/common/image/header-1.png')
     background-size: cover
     background-repeat: no-repeat
     background-position: center

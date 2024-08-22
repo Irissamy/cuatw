@@ -26,7 +26,7 @@
     var(--brand-color-tertiary-saturation-h) 226
     var(--brand-color-tertiary-saturation-s) 9%
     var(--brand-color-tertiary-saturation-l) 35%
-    var(--brand-color-tertiary-desaturation) #909abb
+    var(--brand-color-tertiary-desaturation) rgba(255, 255, 255, 0.6)
     var(--brand-color-tertiary-desaturation-h) 226
     var(--brand-color-tertiary-desaturation-s) 24%
     var(--brand-color-tertiary-desaturation-l) 65%
