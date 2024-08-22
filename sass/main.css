@@ -3805,11 +3805,11 @@ div::-webkit-scrollbar {
   transition: 0.4s;
 }
 .tab__item--active .text {
-  color: #ffffff;
+  color: #f9dcb5;
 }
 .tab__item--active:after {
   width: 50px;
-  background-color: #ffffff;
+  background-color: #f9dcb5;
   transition: 0.4s;
 }
 .tab.-col2 .tab__item {
@@ -4154,7 +4154,7 @@ div::-webkit-scrollbar {
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
           mask-position: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #909abb;
   position: relative;
 }
 .com-cell__form .form-group .el-value__reveal--off,
@@ -4172,7 +4172,7 @@ div::-webkit-scrollbar {
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
           mask-position: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #909abb;
 }
 .com-cell__form .form-group .el-value__clear.-searchBar,
 .com-cell__form .form-select .el-value__clear.-searchBar {
@@ -4360,7 +4360,7 @@ div::-webkit-scrollbar {
           mask: url("../images/common/image/icon/icon_success@2x.png") no-repeat center center;
   -webkit-mask-size: contain;
           mask-size: contain;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #909abb;
 }
 .com-cell__verify--error .verify-text {
   color: #ff3d3d;
@@ -9476,11 +9476,11 @@ div::-webkit-scrollbar {
 .member-menu-bottom .ui-tableview-grouped {
   padding-bottom: 0px;
   margin-bottom: 16px;
-  border-radius: 16px;
+  border-radius: 12px;
   background: transparent linear-gradient(180deg, #5a7efa 0%, #375ad3 6%, #3353c1 40%, #375ad3 74%, #3c61e1 96%, #21357b 100%) 0% 0% no-repeat;
 }
 .member-menu-bottom .ui-tableview-grouped .ui-tableviewcell {
-  padding: 4px 16px;
+  padding: 4px 0px;
   margin: 0px 16px;
   border-bottom: 1px solid #5a7efa;
   background-image: none;
@@ -9785,7 +9785,7 @@ div::-webkit-scrollbar {
   min-height: 20px;
 }
 .deposit__item .item-ct__text {
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   padding-top: 4px;
   font-size: 14px;
   min-height: 20px;
@@ -9834,7 +9834,7 @@ div::-webkit-scrollbar {
   width: 100%;
   font-size: 16px;
   padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .pay-group__item .el-radio-label__title {
   display: flex;
@@ -10021,7 +10021,7 @@ div::-webkit-scrollbar {
 .pay-info__text {
   margin: 0;
   padding-bottom: 4px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   font-weight: normal;
   line-height: 19px;
   font-size: 12px;
@@ -12125,11 +12125,11 @@ div::-webkit-scrollbar {
           mask-size: contain;
   -webkit-mask-image: url("../images/common/image/icon/icon_time@2x.png");
           mask-image: url("../images/common/image/icon/icon_time@2x.png");
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #2c2e34;
 }
 .promo__info__text {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #2c2e34;
 }
 
 .promo-detail__editor {
