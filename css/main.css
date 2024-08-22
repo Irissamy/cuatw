@@ -3622,7 +3622,7 @@ div::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #515561;
+  color: #ffffff;
 }
 .nav .filter__text {
   padding-right: 8px;
@@ -3640,7 +3640,7 @@ div::-webkit-scrollbar {
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: #515561;
+  background-color: #ffffff;
 }
 .nav .select {
   position: relative;
@@ -4486,7 +4486,7 @@ div::-webkit-scrollbar {
 }
 
 .btn-select {
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   background-color: #eceef4;
 }
 .btn-select.btn-ghost {
@@ -4510,12 +4510,12 @@ div::-webkit-scrollbar {
 
 .btn-cancel {
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #909abb;
 }
 .btn-cancel.btn-ghost {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.6);
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .btn-cancel.btn-ghost:active {
   color: white;
@@ -4527,8 +4527,8 @@ div::-webkit-scrollbar {
 }
 .btn-cancel:active,
 .btn-cancel:hover {
-  background-color: rgba(255, 255, 255, 0.6) !important;
-  border-color: rgba(255, 255, 255, 0.6) !important;
+  background-color: #909abb !important;
+  border-color: #909abb !important;
 }
 
 .member-data {
@@ -7812,7 +7812,7 @@ div::-webkit-scrollbar {
   background-color: #eceef4;
   margin-right: 8px;
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .input-popup .btn-tab__item--active {
   color: #ffffff;
@@ -8154,7 +8154,7 @@ div::-webkit-scrollbar {
 .dialog .xfe__text,
 .dialog .xfe-reg__text {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   line-height: 22px;
   margin: 0;
   padding: 8px 12px 12px;
@@ -8259,7 +8259,7 @@ div::-webkit-scrollbar {
 }
 .dialog-alert__text {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .dialog-alert__text-info {
   font-size: 12px;
@@ -8388,7 +8388,7 @@ div::-webkit-scrollbar {
   max-width: 120px;
   font-size: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   padding-top: 32px;
   margin: 0;
   overflow: hidden;
@@ -8466,7 +8466,7 @@ div::-webkit-scrollbar {
 }
 .dialog-amount-list__selection .selection-item__text {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   margin: 0;
 }
 .dialog-amount-list__selection .selection-item--active {
@@ -8608,7 +8608,7 @@ div::-webkit-scrollbar {
 .swipe-dialog .swipe-slider__content .swipe-slider-track__item .item-text {
   font-size: 14px;
   line-height: 22px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .swipe-dialog
   .swipe-slider__content
@@ -8635,7 +8635,7 @@ div::-webkit-scrollbar {
   width: 100%;
   text-align: center;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   padding: 12px 0px 4px;
 }
 .swipe-dialog .swipe-slider__pages .pages-text {
@@ -10041,7 +10041,7 @@ div::-webkit-scrollbar {
   align-items: center;
 }
 .pay__step .pay-title__text {
-  color: #515561;
+  color: #ffffff;
   font-weight: 600;
   display: flex;
 }
@@ -10173,7 +10173,7 @@ div::-webkit-scrollbar {
 }
 .amount-list__item .item-text {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   margin: 0;
 }
 .amount-list__item--active {
@@ -10187,7 +10187,7 @@ div::-webkit-scrollbar {
   background-color: #eceef4;
 }
 .amount-list__item--disabled .item-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 
 .pay-info {
@@ -10298,7 +10298,7 @@ div::-webkit-scrollbar {
   margin: auto;
   font-size: 14px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 
 .withdraw-cell__item {
@@ -10433,12 +10433,12 @@ div::-webkit-scrollbar {
 }
 .withdraw-bank__info .info-account__title {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   white-space: nowrap;
 }
 .withdraw-bank__info .info-account__number {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .withdraw-bank .restore {
   width: 82px;
@@ -10556,7 +10556,7 @@ div::-webkit-scrollbar {
 .withdraw-detailed .table .tr .td {
   font-size: 12px;
   padding: 4px 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   white-space: nowrap;
 }
 .withdraw-detailed .table .tr .td:first-child {
@@ -11190,7 +11190,7 @@ div::-webkit-scrollbar {
   width: 33.333%;
   height: 26px;
   min-width: 80px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   border-right: 0;
   display: flex;
   align-items: center;
@@ -11219,7 +11219,7 @@ div::-webkit-scrollbar {
 .mywallet-range {
   font-size: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   padding-bottom: 8px;
   margin-top: -8px;
   text-align: center;
@@ -11272,7 +11272,7 @@ div::-webkit-scrollbar {
   line-height: 1.2;
 }
 .mywallet .mywallet-info {
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .mywallet .mywallet-info__title {
   margin: 0;
@@ -11365,7 +11365,7 @@ div::-webkit-scrollbar {
   font-size: 12px;
   line-height: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   margin-right: 16px;
   text-decoration: underline;
 }
@@ -11373,14 +11373,14 @@ div::-webkit-scrollbar {
   margin-right: 0px;
 }
 .record-header .record-header-title {
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
   margin: 0px;
 }
 .record-header .record-header-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
@@ -11421,7 +11421,7 @@ div::-webkit-scrollbar {
   max-height: 0;
   overflow: hidden;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   margin: 0;
   transition: all 0.3s;
   overflow-x: auto;
@@ -11463,7 +11463,7 @@ div::-webkit-scrollbar {
 
 .deposit-details {
   padding-top: 8px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .deposit-details__col {
   width: 100%;
@@ -11494,7 +11494,7 @@ div::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   padding: 12px 0 4px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .method__title {
   font-size: 12px;
@@ -11509,7 +11509,7 @@ div::-webkit-scrollbar {
 }
 .method__number {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 
 .card-number {
@@ -11519,7 +11519,7 @@ div::-webkit-scrollbar {
   white-space: nowrap;
   overflow: hidden;
   padding: 4px 0 4px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .card-number__title {
   font-size: 12px;
@@ -11594,7 +11594,7 @@ div::-webkit-scrollbar {
   width: 33.333%;
   height: 26px;
   min-width: 80px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   border-right: 0;
   display: flex;
   align-items: center;
@@ -11623,7 +11623,7 @@ div::-webkit-scrollbar {
 .order-range {
   font-size: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   padding-bottom: 8px;
   margin-top: -8px;
   text-align: center;
@@ -11687,7 +11687,7 @@ div::-webkit-scrollbar {
   line-height: 1.2;
 }
 .order .order-info {
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
 }
 .order .order-info .badge {
   width: auto;
@@ -11755,7 +11755,7 @@ div::-webkit-scrollbar {
   margin-top: 8px;
   font-size: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   background-color: rgba(80, 85, 98, 0.1);
 }
 .order .order-info__result .result-list {
@@ -11821,7 +11821,7 @@ div::-webkit-scrollbar {
 }
 .order .item-list__content {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #909abb;
   display: flex;
   align-items: flex-start;
 }
