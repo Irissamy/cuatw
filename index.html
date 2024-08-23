@@ -194,7 +194,7 @@
         <div class="layout-outside__left">
           <div class="sidebar">
             <div class="sidebar__list">
-              <a href="#channel1" class="list-item list-item--active">
+              <a href="#channel1" class="list-item list-item--active" onclick="openCity(event, 'channel1')">
                 <img src="images/common/demo/index/_sidebar/icon/icon-hot_active.png" alt="" class="list-item__icon">
                 <img src="images/common/demo/index/_sidebar/icon/icon-hot_active.png" alt=""
                   class="list-item__icon list-item__icon--active">
@@ -202,17 +202,17 @@
               </a>
               <a href="#channel2" class="list-item" onclick="openCity(event, 'channel2')">
                 <img src="images/common/demo/index/_sidebar/icon/icon-live@2x.png" alt="" class="list-item__icon">
-                <img src="images/common/demo/index/_sidebar/icon/icon-live@2x.png" alt=""
+                <img src="images/common/demo/index/_sidebar/icon/icon-live_active@2x.png" alt=""
                   class="list-item__icon list-item__icon--active">
                 <span class="list-item__text">棋牌游戏</span>
               </a>
               <a href="#channel3" class="list-item" onclick="openCity(event, 'channel3')">
                 <img src="images/common/demo/index/_sidebar/icon/icon-sport@2x.png" alt="" class="list-item__icon">
-                <img src="images/common/demo/index/_sidebar/icon/icon-sport@2x.png" alt=""
+                <img src="images/common/demo/index/_sidebar/icon/icon-sport_active@2x.png" alt=""
                   class="list-item__icon list-item__icon--active">
                 <span class="list-item__text">體育游戏</span>
               </a>
-              <a href="#channel4" class="list-item" onclick="openCity(event, 'channel5')">
+              <a href="#channel4" class="list-item" onclick="openCity(event, 'channel4')">
                 <img src="images/common/demo/index/_sidebar/icon/icon-slot@2x.png" alt="" class="list-item__icon">
                 <img src="images/common/demo/index/_sidebar/icon/icon-slot@2x.png" alt=""
                   class="list-item__icon list-item__icon--active">
@@ -413,6 +413,25 @@
         }
       }]
     });
+    //show/hide
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName('list-item');
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(
+          'list-item--active',
+          ''
+        );
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      evt.currentTarget.className += ' list-item--active';
+
+      //scroll animation
+    }
     function showLang() {
       var popup = document.getElementById('show');
       if (popup.style.display === 'none') {

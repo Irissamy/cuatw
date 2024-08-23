@@ -3417,6 +3417,7 @@ div::-webkit-scrollbar {
 .header .lang-list__item .item-title {
   display: flex;
   align-items: center;
+  font-size: 14px;
   color: #ffffff;
 }
 .header .lang-list__item .item-title::before {
