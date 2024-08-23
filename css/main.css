@@ -9468,21 +9468,18 @@ div::-webkit-scrollbar {
 .entry-form__main .main-reg--active .main-reg__title {
   transform: translate(0px, 0px);
 }
-.entry-form__main .main-reg .com-cell .el-icon {
-  background-color: #3557ca;
-}
 .entry-form__main .main-reg .com-cell .el-input {
   color: #ffffff;
 }
 .entry-form__main .main-reg .com-cell .el-input::-moz-placeholder {
-  color: #3557ca;
+  color: rgba(255, 255, 255, 0.6);
 }
 .entry-form__main .main-reg .com-cell .el-input::placeholder {
-  color: #3557ca;
+  color: rgba(255, 255, 255, 0.6);
 }
 .entry-form__main .main-reg .com-cell .el-value__reveal,
 .entry-form__main .main-reg .com-cell .el-value__clear {
-  background-color: #3557ca;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .entry-form__main .main-reg .com-cell__verify .verify-icon {
   background-color: #c5c8d1;
