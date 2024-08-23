@@ -2629,7 +2629,7 @@ div::-webkit-scrollbar {
   overflow-y: auto;
 }
 .layout-content.-index {
-  background-image: url('../images/common/demo/index/index-bg.png');
+  background-image: url('../images/common/image/header-1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3741,7 +3741,6 @@ div::-webkit-scrollbar {
       #1d3b72 0%,
       #1e3f76 48%,
       #1c458b 69%,
-      #225480 86%,
       #3c61e1 96%,
       #3c61e1 98%,
       #274174 100%
@@ -9165,7 +9164,7 @@ div::-webkit-scrollbar {
   z-index: 1000;
   flex-direction: column;
   overflow-y: auto;
-  background-image: url('../images/common/demo/index/index-bg.png');
+  background-image: url('../images/common/image/header-1.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12228,6 +12227,9 @@ div::-webkit-scrollbar {
 .about .btn-tab__item--active:after {
   width: 50px;
   transition: 0.4s;
+}
+.about .editor-content {
+  color: #ffffff;
 }
 
 .about-select {
