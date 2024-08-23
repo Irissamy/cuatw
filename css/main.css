@@ -11,6 +11,7 @@ body {
 }
 
 body {
+  margin: 0;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: 1.15;
@@ -2333,6 +2334,7 @@ div::-webkit-scrollbar {
   color: #909abb !important;
   pointer-events: none;
   background-color: #eceef4 !important;
+  background-image: none !important;
 }
 
 .rounded-pill {
@@ -3738,7 +3740,7 @@ div::-webkit-scrollbar {
       #1d3b72 0%,
       #1e3f76 48%,
       #1c458b 69%,
-      #22659f 86%,
+      #225480 86%,
       #3c61e1 96%,
       #3c61e1 98%,
       #274174 100%
@@ -3929,6 +3931,7 @@ div::-webkit-scrollbar {
   border-bottom: 1px solid rgba(80, 85, 98, 0.1);
 }
 .com-cell__form--disabled {
+  background-image: none !important;
   background-color: #eceef4;
   color: #b4bacf;
   border: 1px solid transparent;
@@ -4500,12 +4503,15 @@ div::-webkit-scrollbar {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #d4bba1;
+  background-image: url('../images/common/image/btn-primary-bg-sq@2x.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .btn-primary.btn-ghost {
   background: none;
-  border: 1px solid #d4bba1;
-  color: #d4bba1;
+  border: 1px solid #4d8aff;
+  color: #4d8aff;
 }
 .btn-primary.btn-ghost:active {
   color: white;
@@ -4517,8 +4523,8 @@ div::-webkit-scrollbar {
 }
 .btn-primary:active,
 .btn-primary:hover {
-  background-color: #d4bba1 !important;
-  border-color: #d4bba1 !important;
+  background-color: #4d8aff !important;
+  border-color: #4d8aff !important;
 }
 
 .btn-secondary {
@@ -4545,7 +4551,7 @@ div::-webkit-scrollbar {
 }
 
 .btn-select {
-  color: #909abb;
+  color: #ffffff;
   background-color: #eceef4;
 }
 .btn-select.btn-ghost {
@@ -4563,13 +4569,13 @@ div::-webkit-scrollbar {
 }
 .btn-select:active,
 .btn-select:hover {
-  background-color: #d4bba1 !important;
-  border-color: #d4bba1 !important;
+  background-color: #4d8aff !important;
+  border-color: #4d8aff !important;
 }
 
 .btn-cancel {
   color: #ffffff;
-  background-color: #909abb;
+  background-color: #c6cbd9;
 }
 .btn-cancel.btn-ghost {
   background: none;
@@ -7723,7 +7729,7 @@ div::-webkit-scrollbar {
 }
 .input-popup__header__top .header-title .title-text {
   font-size: 20px;
-  color: #ebe4c1;
+  color: #4d8aff;
   font-weight: 500;
   margin: 0;
   white-space: nowrap;
@@ -7732,7 +7738,7 @@ div::-webkit-scrollbar {
   padding-left: 8px;
   padding-top: 4px;
   font-size: 14px;
-  color: #ebe4c1;
+  color: #4d8aff;
 }
 .input-popup__header__bottom {
   position: relative;
@@ -7757,10 +7763,10 @@ div::-webkit-scrollbar {
   z-index: 1;
 }
 .input-popup__body .cell-list .com-cell__form {
-  border: 1px solid #ebe4c1;
+  border: 1px solid #4d8aff;
 }
 .input-popup__body .cell-list .cell {
-  border: 1px solid #ebe4c1;
+  border: 1px solid #4d8aff;
   border-radius: 8px;
   padding: 0;
 }
@@ -7780,7 +7786,7 @@ div::-webkit-scrollbar {
   max-width: inherit;
   margin-left: -4px;
   margin-top: -4px;
-  color: #ebe4c1;
+  color: #4d8aff;
 }
 .input-popup__body
   .cell-list
@@ -7830,7 +7836,7 @@ div::-webkit-scrollbar {
 }
 .input-popup__footer {
   padding: 8px 12px;
-  border-top: 1px solid #ebe4c1;
+  border-top: 1px solid #4d8aff;
 }
 .input-popup__footer .row {
   display: flex;
@@ -7875,7 +7881,7 @@ div::-webkit-scrollbar {
 }
 .input-popup .btn-tab__item--active {
   color: #ffffff;
-  background-color: #d4bba1;
+  background-color: #4d8aff;
   transition: 0.4s;
 }
 .input-popup .btn-tab__item:last-child {
@@ -8250,7 +8256,7 @@ div::-webkit-scrollbar {
   line-height: 44px;
   color: #ffffff;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 1000px;
   border: 0;
   outline: 0;
   margin-right: 8px;
@@ -8761,6 +8767,7 @@ div::-webkit-scrollbar {
   color: #007aff;
   margin-right: 0;
   background-color: transparent;
+  background-image: none;
   border: transparent;
   padding: 12px 0;
   font-weight: normal;
@@ -9606,12 +9613,12 @@ div::-webkit-scrollbar {
   background: transparent
     linear-gradient(
       180deg,
-      #3c61e1 0%,
-      #375ad3 6%,
-      #3353c1 40%,
-      #375ad3 74%,
-      #3c61e1 96%,
-      #21357b 100%
+      #a2abff 0%,
+      #689eff 6%,
+      #57d7ff 40%,
+      #689eff 74%,
+      #a2abff 96%,
+      #6e74ae 100%
     )
     0% 0% no-repeat;
   border-radius: 1000px;
@@ -9654,7 +9661,7 @@ div::-webkit-scrollbar {
 }
 .member-menu-top__item .menu-title {
   text-align: left;
-  color: #bffffd;
+  color: #263b8a;
   font-size: 14px;
   font-weight: 600;
   margin: 0;
@@ -9685,6 +9692,9 @@ div::-webkit-scrollbar {
 }
 .member-menu-bottom .com-inner {
   margin-top: 50px;
+}
+.member-menu-bottom .com-inner__content {
+  padding: 16px 24px 32px;
 }
 .member-menu-bottom .ui-tableview-grouped {
   padding-bottom: 0px;
@@ -9810,7 +9820,7 @@ div::-webkit-scrollbar {
   font-size: 12px;
   font-weight: 500;
   line-height: normal;
-  color: #909abb;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .entry-btn {
@@ -9822,18 +9832,10 @@ div::-webkit-scrollbar {
   padding: 0px 8px;
   margin-top: 16px;
   border-radius: 1000px;
-  border: 1px solid #138ae7;
-  background: transparent
-    linear-gradient(
-      180deg,
-      #5a7efa 0%,
-      #375ad3 6%,
-      #3353c1 40%,
-      #375ad3 74%,
-      #3c61e1 96%,
-      #21357b 100%
-    )
-    0% 0% no-repeat;
+  background-image: url('../images/common/image/btn-primary-bg@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .entry-btn__text {
   font-size: 14px;
@@ -10236,7 +10238,7 @@ div::-webkit-scrollbar {
   margin: 0;
 }
 .amount-list__item--active {
-  background-color: #d4bba1;
+  background-color: #4d8aff;
 }
 .amount-list__item--active .item-text {
   color: #ffffff;
@@ -10287,7 +10289,7 @@ div::-webkit-scrollbar {
   color: #ff3d3d;
 }
 .pay-info__text-remark {
-  color: #d4bba1;
+  color: #4d8aff;
   margin: 0;
   font-weight: 400;
   line-height: 19px;
@@ -10983,7 +10985,7 @@ div::-webkit-scrollbar {
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: #d4bba1;
+  background-color: #4d8aff;
 }
 .bind .add-card-btn__content .btn-text {
   font-size: 16px;
@@ -11034,7 +11036,7 @@ div::-webkit-scrollbar {
   right: 0;
   border-style: solid;
   border-width: 0 50px 50px 0;
-  border-color: transparent #d4bba1 transparent transparent;
+  border-color: transparent #4d8aff transparent transparent;
 }
 .bind .bind-card__item .bank-card__order .order-number {
   position: absolute;
@@ -11263,7 +11265,7 @@ div::-webkit-scrollbar {
 }
 .mywallet-filter .btn-tab__item--active {
   color: #ffffff;
-  background-color: #d4bba1;
+  background-color: #4d8aff;
   transition: 0.4s;
 }
 .mywallet-filter .btn-tab__item:last-child {
@@ -11321,11 +11323,11 @@ div::-webkit-scrollbar {
   font-weight: 600;
 }
 .mywallet .mywallet-head {
-  color: #ffc861;
+  color: #4d8aff;
   font-size: 12px;
   margin: 0 0 8px;
   padding: 0 0 12px 0;
-  border-bottom: 1px solid rgba(255, 200, 97, 0.25);
+  border-bottom: 1px solid #4d8aff;
   text-align: center;
   font-weight: 600;
   line-height: 1.2;
@@ -11368,7 +11370,7 @@ div::-webkit-scrollbar {
   margin-bottom: 0;
 }
 .record-cell__item--open .record-header__lf .record-header-title {
-  color: #ffc861;
+  color: #4d8aff;
 }
 .record-cell__item--open .record-title:before {
   bottom: 3px;
@@ -11667,7 +11669,7 @@ div::-webkit-scrollbar {
 }
 .order-filter .btn-tab__item--active {
   color: #ffffff;
-  background-color: #d4bba1;
+  background-color: #4d8aff;
   transition: 0.4s;
 }
 .order-filter .btn-tab__item:last-child {
@@ -11691,7 +11693,17 @@ div::-webkit-scrollbar {
 .order-info-list {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to right, #b59f87 0, #b59f87 100%);
+  background: transparent
+    linear-gradient(
+      180deg,
+      #3c61e1 0%,
+      #375ad3 6%,
+      #3353c1 40%,
+      #375ad3 74%,
+      #3c61e1 96%,
+      #21357b 100%
+    )
+    0% 0% no-repeat;
   height: 28px;
   padding: 12px 16px;
 }
@@ -11736,12 +11748,12 @@ div::-webkit-scrollbar {
   padding-bottom: 8px;
 }
 .order .order-head {
-  color: #ffc861;
+  color: #4d8aff;
   font-size: 12px;
   font-weight: 600;
   margin: 0 0 8px;
   padding: 0 0 12px 0;
-  border-bottom: 1px solid rgba(255, 200, 97, 0.25);
+  border-bottom: 1px solid rgba(77, 138, 255, 0.231372549);
   text-align: center;
   line-height: 1.2;
 }
@@ -12070,11 +12082,11 @@ div::-webkit-scrollbar {
 }
 
 .message-date {
-  color: #ffc861;
+  color: #4d8aff;
   font-size: 12px;
   margin: 0 0 8px;
   padding: 0 0 12px 0;
-  border-bottom: 1px solid rgba(255, 200, 97, 0.25);
+  border-bottom: 1px solid rgba(77, 138, 255, 0.231372549);
   text-align: center;
   font-weight: normal;
   line-height: 1.2;
@@ -12420,7 +12432,7 @@ div::-webkit-scrollbar {
   text-align: center;
   font-size: 12px;
   position: relative;
-  background-color: #cdefff;
+  background-color: #4d8aff;
   border-radius: 16px;
   width: -moz-max-content;
   width: max-content;
@@ -12549,7 +12561,7 @@ div::-webkit-scrollbar {
 .wcr--left .list__item__content .stock-user__text {
   font-size: 12px;
   font-weight: 500;
-  color: #515561;
+  color: #b4bacf;
 }
 .wcr--left .content__message {
   background-color: #ffffff;
@@ -12990,7 +13002,7 @@ div::-webkit-scrollbar {
   min-height: 44px;
   margin-right: 8px;
   padding: 8px;
-  background-color: #d4bba1;
+  background-color: #4d8aff;
   border-radius: 8px;
   text-decoration: none;
   overflow: hidden;
