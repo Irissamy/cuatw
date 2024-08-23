@@ -4419,7 +4419,7 @@ div::-webkit-scrollbar {
   background-color: #909abb;
 }
 .com-cell__verify--error .verify-text {
-  color: #ff3d3d;
+  color: #ff3d3d !important;
 }
 .com-cell__verify--error .verify-icon {
   -webkit-mask: url('../images/common/image/icon/icon_mistake@2x.png') no-repeat
@@ -4428,7 +4428,7 @@ div::-webkit-scrollbar {
     center;
   -webkit-mask-size: contain;
   mask-size: contain;
-  background-color: #ff3d3d;
+  background-color: #ff3d3d !important;
 }
 .com-cell__verify--medium .verify-text {
   color: #fc0;
@@ -9226,7 +9226,8 @@ div::-webkit-scrollbar {
   position: relative;
   margin: 0px 32px 32px;
   border-radius: 10px;
-  background-color: rgba(166, 174, 202, 0.08);
+  border: 1px solid transparent;
+  background: linear-gradient(to right, #fdeed1 0%, #f5cb9b 100%) border-box;
   overflow: hidden;
 }
 .entry-form__main {
@@ -9235,7 +9236,17 @@ div::-webkit-scrollbar {
   min-height: 60vh;
   padding: 16px 32px;
   border-radius: 10px;
-  background-color: rgba(228, 231, 241, 0.8);
+  background: transparent
+    linear-gradient(
+      180deg,
+      #5a7efa 0%,
+      #375ad3 6%,
+      #3353c1 40%,
+      #375ad3 74%,
+      #3c61e1 96%,
+      #21357b 100%
+    )
+    0% 0% no-repeat;
 }
 .entry-form__main:before {
   content: '';
@@ -9244,7 +9255,7 @@ div::-webkit-scrollbar {
   right: 0px;
   bottom: 0px;
   width: 55px;
-  background-color: hsla(0, 0%, 100%, 0.7);
+  background-color: hsla(0, 0%, 100%, 0.3);
   transition: width 0.3s ease-in-out;
 }
 .entry-form__main--active:before {
@@ -9279,7 +9290,7 @@ div::-webkit-scrollbar {
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: #515561;
+  background-color: #ffffff;
 }
 .entry-form__main .entry-btn-rt__text {
   display: flex;
@@ -9287,7 +9298,7 @@ div::-webkit-scrollbar {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 12px;
-  color: #515561;
+  color: #ffffff;
   text-align: center;
   width: 18px;
   line-height: 22px;
@@ -9319,7 +9330,7 @@ div::-webkit-scrollbar {
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: #515561;
+  background-color: #ffffff;
 }
 .entry-form__main .entry-btn-lf__text {
   display: flex;
@@ -9327,7 +9338,7 @@ div::-webkit-scrollbar {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 12px;
-  color: #515561;
+  color: #ffffff;
   text-align: center;
   width: 18px;
   line-height: 22px;
@@ -9352,7 +9363,7 @@ div::-webkit-scrollbar {
 .entry-form__main .main-reg__title {
   font-size: 16px;
   font-weight: 600;
-  color: #515561;
+  color: #ffffff;
   text-align: center;
   padding-bottom: 12px;
   transition: all 0.1s ease-in-out;
@@ -9366,6 +9377,7 @@ div::-webkit-scrollbar {
 .entry-form__main .main-reg .com-cell__form {
   min-height: 40px;
   padding: 8px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 .entry-form__main .main-login .com-cell:first-child,
 .entry-form__main .main-reg .com-cell:first-child {
@@ -9407,7 +9419,7 @@ div::-webkit-scrollbar {
 .entry-form__main .main-login .contact__btn .btn-text,
 .entry-form__main .main-reg .contact__btn .btn-text {
   font-size: 12px;
-  color: #909abb;
+  color: #c5c8d1;
   padding-left: 4px;
 }
 .entry-form__main .main-login .try-btn,
@@ -9416,7 +9428,7 @@ div::-webkit-scrollbar {
   width: 100%;
   font-size: 12px;
   padding: 32px 0px 12px;
-  color: #909abb;
+  color: #c5c8d1;
   text-align: center;
 }
 .entry-form__main .main-login {
@@ -9436,6 +9448,9 @@ div::-webkit-scrollbar {
 .entry-form__main .main-login--active .main-login__title {
   transform: translate(0px, 0px);
 }
+.entry-form__main .main-login .com-cell .el-input {
+  color: #ffffff;
+}
 .entry-form__main .main-reg {
   padding-left: 55px;
   opacity: 0;
@@ -9452,6 +9467,28 @@ div::-webkit-scrollbar {
 }
 .entry-form__main .main-reg--active .main-reg__title {
   transform: translate(0px, 0px);
+}
+.entry-form__main .main-reg .com-cell .el-icon {
+  background-color: #3557ca;
+}
+.entry-form__main .main-reg .com-cell .el-input {
+  color: #ffffff;
+}
+.entry-form__main .main-reg .com-cell .el-input::-moz-placeholder {
+  color: #3557ca;
+}
+.entry-form__main .main-reg .com-cell .el-input::placeholder {
+  color: #3557ca;
+}
+.entry-form__main .main-reg .com-cell .el-value__reveal,
+.entry-form__main .main-reg .com-cell .el-value__clear {
+  background-color: #3557ca;
+}
+.entry-form__main .main-reg .com-cell__verify .verify-icon {
+  background-color: #c5c8d1;
+}
+.entry-form__main .main-reg .com-cell__verify .verify-text {
+  color: #c5c8d1;
 }
 
 .member-center__user-m {
