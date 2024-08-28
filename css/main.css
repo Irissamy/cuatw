@@ -3328,6 +3328,22 @@ div::-webkit-scrollbar {
   list-style: none;
 }
 
+.float-side {
+  position: absolute;
+  left: 8px;
+  top: 50px;
+  z-index: 2100;
+}
+.float-side__btn {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+.float-side__btn .btn-icon {
+  display: block;
+  width: 100%;
+}
+
 .carousel {
   position: relative;
   padding: 0px 16px;
