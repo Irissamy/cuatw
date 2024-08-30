@@ -17,6 +17,14 @@ window.iconrotate = () => {
     t.classList.remove('icon-refresh--active');
   }, 400);
 };
+
+window.toast = () => {
+  var yourUl = document.getElementById('toast');
+  yourUl.style.display = yourUl.style.display === 'none' ? '' : 'none';
+  setTimeout(function () {
+    yourUl.style.display = 'none';
+  }, 1000);
+};
 // window.addEventListener('load', function () {
 //   window.innerWidth < 576 && investmentListShow()
 //   window.innerWidth > 576 && investmentListHide()
