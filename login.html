@@ -15,6 +15,45 @@
 
 <body>
   <div class="layout-main inner-bg">
+    <!-- 服務條款popup -->
+    <div id="serviceTerms" class="popup" style="display: none;">
+      <div class="popup-mask">
+        <!--popup-->
+        <div class="bulletin-popup">
+          <div class="bulletin-popup__header">
+            <div class="bulletin-popup__header__title">
+              <h2 class="title-text">服務條款</h2>
+            </div>
+          </div>
+          <div class="bulletin-popup__body">
+            <!-- bulletin-list(內容) -->
+            <div class="bulletin-list">
+              <div class="bulletin__item">
+                <h3 class="bulletin__title">
+                  <div class="bulletin__title__text">小心诈骗QQ群组</div>
+                </h3>
+                <div class="bulletin__content">
+                  <ul>
+                    <li>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis tempora numquam fuga
+                      modi nisi est odit nulla quidem corrupti aut, necessitatibus, beatae illum officia rem optio
+                      quisquam itaque repellat.</li>
+                  </ul>
+                  <p>
+                    敬请会员留意：近期有不法分子利用官网QQ号码创建QQ群组，假冒官方客服进行诈骗的行为；公司郑重声明：我司所有充值入口都需要登入网站点击线上存款进行查看，绝对不会通过QQ客服窗口提供充值卡号或充值二维码；若因贵宾无视公司温馨提醒导致被骗，造成的一切损失由贵宾自行承担，公司概不负责，如给您带来不便，敬请谅解，谢谢！
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="bulletin-close" href="javascript:void(0);" onclick="showServiceTerms()">
+            <img src="images/common/demo/popup/close_up@2x.png" class="bulletin-close__img" alt="" />
+          </a>
+        </div>
+        <!--popup-->
+      </div>
+    </div>
+    <!-- 服務條款popup end -->
+
     <!-- 註冊成功popup start -->
     <div id="regsuccess-popup" class="popup" style="display:none;">
       <div class="popup-mask">
@@ -254,8 +293,8 @@
                 <div class="com-cell">
                   <div class="com-cell__check">
                     <input type="checkbox" name="scales" class="check-checkbox" />
-                    <label for="scales" class="check-text">我已年滿18歲，並同意投注相關規範以及<a
-                        href="javascript:void(0)">服務條款</a></label>
+                    <label for="scales" class="check-text">我已年滿18歲，並同意投注相關規範以及<a href="javascript:void(0)"
+                        onclick="showServiceTerms()">服務條款</a></label>
                   </div>
                 </div>
                 <div class="contact">
@@ -285,6 +324,14 @@
     //popup-show/hide
     function show() {
       var x = document.getElementById('show');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+    function showServiceTerms() {
+      var x = document.getElementById('serviceTerms');
       if (x.style.display === 'none') {
         x.style.display = 'block';
       } else {

@@ -3902,6 +3902,7 @@ div::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 22px;
   height: 22px;
   cursor: pointer;
@@ -5570,6 +5571,17 @@ div::-webkit-scrollbar {
   display: flex;
   margin-top: -32px;
 }
+.bulletin-popup .bulletin-popup__header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+}
+.bulletin-popup .bulletin-popup__header__title .title-text {
+  margin: 0;
+  color: #EBE4C1;
+}
 .bulletin-popup .bulletin-popup__header__top {
   display: flex;
   justify-content: space-between;
@@ -5637,6 +5649,9 @@ div::-webkit-scrollbar {
 .bulletin-popup .bulletin__content img {
   width: 100%;
   display: block;
+}
+.bulletin-popup .bulletin__content ul {
+  padding-left: 0px;
 }
 .bulletin-popup .bulletin-empty {
   display: flex;

@@ -241,6 +241,15 @@
       height: 80px
       display: flex
       margin-top: -$space-xxxxl
+      &__title
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        margin-top: 32px
+        .title-text
+          margin: 0
+          color: #EBE4C1
       &__top 
         display: flex
         justify-content: space-between
@@ -305,6 +314,8 @@
       text-align: justify
       overflow-x: auto
       @include editor-setting
+      ul
+        padding-left: 0px
     
   
   .bulletin-empty 
