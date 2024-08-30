@@ -91,6 +91,16 @@
       background-color: hsla(0,0%,100%,0.3)
       transition: width 0.3s ease-in-out
     
+    &.-forgot
+      &:before
+        background-color: transparent
+      .main-login
+        opacity: 1
+        padding-right: 0px
+        transform: translate(0px, 0px)
+        &__title
+          transform: translate(0px, 0px)
+
     &--active 
       &:before 
         width: calc(100% - 55px)

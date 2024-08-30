@@ -3868,6 +3868,11 @@ div::-webkit-scrollbar {
   flex-direction: column;
   padding: 4px 0;
 }
+.com-cell.-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .com-cell__info {
   font-size: 12px;
   color: #909abb;
@@ -3875,6 +3880,49 @@ div::-webkit-scrollbar {
 }
 .com-cell__info .text-red {
   color: #ff3d3d;
+}
+.com-cell__lf {
+  margin-left: auto;
+}
+.com-cell__lf .cell-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.com-cell__check {
+  display: flex;
+  align-items: center;
+}
+.com-cell__check .check-text {
+  padding-left: 4px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.com-cell__check .check-checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.com-cell__check .check-checkbox:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.com-cell__check .check-checkbox:checked {
+  background-color: #4d8aff;
+}
+.com-cell__check .check-checkbox:checked:after {
+  display: block;
 }
 
 .com-cell-info {
@@ -8148,8 +8196,8 @@ div::-webkit-scrollbar {
 }
 
 .danger .xfe__icon {
-  -webkit-mask-image: url("images/common/image/icon/icon_fail@2x.png");
-          mask-image: url("images/common/image/icon/icon_fail@2x.png");
+  -webkit-mask-image: url("../images/common/image/icon_fail@2x.png");
+          mask-image: url("../images/common/image/icon_fail@2x.png");
   background-color: #ff3d3d;
 }
 .danger .xfe__title {
@@ -8157,8 +8205,8 @@ div::-webkit-scrollbar {
 }
 
 .warning .xfe__icon {
-  -webkit-mask-image: url("../images/common/image/icon/icon_mistake@2x.png");
-          mask-image: url("../images/common/image/icon/icon_mistake@2x.png");
+  -webkit-mask-image: url("../images/common/image/icon_mistake@2x.png");
+          mask-image: url("../images/common/image/icon_mistake@2x.png");
   background-color: #fc0;
 }
 .warning .xfe__title {
@@ -9077,6 +9125,17 @@ div::-webkit-scrollbar {
   width: 55px;
   background-color: hsla(0, 0%, 100%, 0.3);
   transition: width 0.3s ease-in-out;
+}
+.entry-form__main.-forgot:before {
+  background-color: transparent;
+}
+.entry-form__main.-forgot .main-login {
+  opacity: 1;
+  padding-right: 0px;
+  transform: translate(0px, 0px);
+}
+.entry-form__main.-forgot .main-login__title {
+  transform: translate(0px, 0px);
 }
 .entry-form__main--active:before {
   width: calc(100% - 55px);

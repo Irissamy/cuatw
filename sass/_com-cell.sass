@@ -6,13 +6,56 @@
   display: flex
   flex-direction: column
   padding: $space-xs 0
+
+  &.-row
+    display: flex
+    flex-direction: row
+    align-items: center
+
   &__info 
     font-size: 12px
     color: #909abb
     line-height: 18px
     .text-red 
       color: #ff3d3d
-    
+  &__lf
+    margin-left: auto
+    .cell-text
+      font-size: 12px
+      color: rgba(255, 255, 255, 0.6)
+
+  &__check
+    display: flex
+    align-items: center
+    .check-text
+      padding-left: 4px
+      font-size: 14px
+      color: rgba(255, 255, 255, 0.6)
+    .check-checkbox
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 22px
+      height: 22px
+      cursor: pointer
+      border: 1px solid rgba(255, 255, 255, 0.6)
+
+      &:after
+        content: ''
+        display: none
+        position: absolute
+        top: 2px
+        width: 5px
+        height: 10px
+        border: solid white
+        border-width: 0 3px 3px 0
+        transform: rotate(45deg)
+  
+      &:checked
+        background-color: #4d8aff 
+        &:after
+          display: block
   
 
 .com-cell-info 

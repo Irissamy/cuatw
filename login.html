@@ -157,19 +157,26 @@
                     <span class="verify-text">必填</span>
                   </div>
                 </div>
+                <div class="com-cell -row">
+                  <div class="com-cell__check">
+                    <input type="checkbox" id="scales" name="scales" class="check-checkbox" />
+                    <label for="scales" class="check-text">記住密碼</label>
+                  </div>
+                  <a href="/login_forgot.html" class="com-cell__lf">
+                    <span class="cell-text">忘記密碼？</span></a>
+                </div>
                 <div class="contact">
                   <a class="contact__btn" href="javascript:void(0);">
                     <div class="btn-icon"></div>
                     <div class="btn-text">联系客服</div>
                   </a>
                 </div>
-                <a class="btn btn-primary rounded-pill btn-ripple btn--disabled" href="javascript:void(0);"
-                  onclick="rippleBtn(event,this);">会员登录</a>
+                <a class="btn btn-primary rounded-pill btn-ripple btn--disabled" href="javascript:void(0);">会员登录</a>
                 <a class="try-btn" href="/index.html">先去逛逛</a>
               </div>
               <!-- sign in -->
               <div class="main-reg" id="reg-form" style="display:none;">
-                <div class="main-reg__title" id="entry-title">注册</div>
+                <div class="main-reg__title">注册</div>
                 <div class="com-cell">
                   <div class="com-cell__form -filled">
                     <div class="form-group">
@@ -238,29 +245,26 @@
                     <span class="verify-text">必填</span>
                   </div>
                 </div>
-                <!-- <div class="com-cell">
-                  <div class="com-cell__form -filled">
-                    <div class="form-group">
-                      <div class="el-icon -icon_verification_code"></div>
-                      <input type="number" class="el-input" placeholder="验证码" />
-                      <div class="captcha">
-                        <img src="~@design/demo/member/captchaCode.png" class="captcha__img" alt="" />
-                      </div>
-                    </div>
+                <div class="com-cell">
+                  <div class="com-cell__check">
+                    <input type="checkbox" name="scales" class="check-checkbox" checked />
+                    <label for="scales" class="check-text">是否通過手機接收優惠訊息</label>
                   </div>
-                  <div class="com-cell__verify com-cell__verify--error">
-                    <div class="verify-icon"></div>
-                    <span class="verify-text">必填</span>
+                </div>
+                <div class="com-cell">
+                  <div class="com-cell__check">
+                    <input type="checkbox" name="scales" class="check-checkbox" />
+                    <label for="scales" class="check-text">我已年滿18歲，並同意投注相關規範以及<a
+                        href="javascript:void(0)">服務條款</a></label>
                   </div>
-                </div> -->
+                </div>
                 <div class="contact">
                   <a class="contact__btn" href="javascript:void(0);">
                     <div class="btn-icon"></div>
                     <div class="btn-text">联系客服</div>
                   </a>
                 </div>
-                <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0);"
-                  onclick="rippleBtn(event,this), window.regsuccessJump()">注册</a>
+                <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0);">注册</a>
               </div>
               <!-- sign in end -->
             </div>
