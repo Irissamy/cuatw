@@ -199,7 +199,7 @@
         <div class="layout-outside__left">
           <div class="sidebar">
             <div class="sidebar__list">
-              <a href="#channel1" class="list-item list-item--active" onclick="openCity(event, 'channel1')">
+              <a href="#channel1" class="list-item active" onclick="openCity(event, 'channel1')">
                 <img src="images/common/demo/index/_sidebar/icon/icon-hot_active.png" alt="" class="list-item__icon">
                 <img src="images/common/demo/index/_sidebar/icon/icon-hot_active.png" alt=""
                   class="list-item__icon list-item__icon--active">
@@ -439,13 +439,13 @@
       tablinks = document.getElementsByClassName('list-item');
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(
-          'list-item--active',
+          ' active',
           ''
         );
       }
 
       // Show the current tab, and add an "active" class to the button that opened the tab
-      evt.currentTarget.className += ' list-item--active';
+      evt.currentTarget.className += ' active';
 
       //scroll animation
     }

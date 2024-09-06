@@ -9180,14 +9180,14 @@ div::-webkit-scrollbar {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.sidebar__list .list-item--active {
+.sidebar__list .list-item.active {
   background: url('../images/common/demo/index/_sidebar/icon/download_shadow_active@2x.png')
     no-repeat center;
   background-size: cover;
   border: 2px #fdeed1 solid;
   box-shadow: #d89e5b 2px 2px 0px 0px;
 }
-.sidebar__list .list-item--active .list-item__icon {
+.sidebar__list .list-item.active .list-item__icon {
   display: none;
   animation-name: zoomIn;
   animation-duration: 400ms;
@@ -9195,10 +9195,10 @@ div::-webkit-scrollbar {
   animation-timing-function: ease-in-out;
   animation-delay: calc(var(--animation-order) * 30ms);
 }
-.sidebar__list .list-item--active .list-item__icon--active {
+.sidebar__list .list-item.active .list-item__icon--active {
   display: block;
 }
-.sidebar__list .list-item--active .list-item__text {
+.sidebar__list .list-item.active .list-item__text {
   color: white;
 }
 
