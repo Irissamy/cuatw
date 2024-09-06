@@ -8260,7 +8260,8 @@ div::-webkit-scrollbar {
 
 .transfer-dialog,
 .swiper-dialog,
-.ios-dialog {
+.ios-dialog,
+.cardboard-dialog {
   z-index: 2001;
 }
 
@@ -8926,6 +8927,19 @@ div::-webkit-scrollbar {
 .dialog-ios__footer .btn-group .btn-secondary:last-child {
   border-right: 0;
   margin-right: 0;
+}
+
+.cardboard-dialog .cardboard {
+  width: 100%;
+  padding: 12px;
+}
+.cardboard-dialog .cardboard__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.cardboard-dialog .cardboard__img:last-child {
+  margin-bottom: 0px;
 }
 
 .news-title {

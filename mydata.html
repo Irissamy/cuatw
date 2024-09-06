@@ -15,6 +15,25 @@
 
 <body>
     <div class="layout-main inner-bg">
+        <!-- 顯示上傳存摺圖片 -->
+        <div id="show9" class="cardboard-dialog" style="display: none;">
+            <div class="dialog-mask">
+                <!--success-->
+                <div class="dialog success">
+                    <div class="dialog__body">
+                        <div class="cardboard">
+                            <img class="cardboard__img" src="images/common/demo/index/banner.png" alt="">
+                        </div>
+                    </div>
+                    <div class="dialog__body-footer">
+                        <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0)"
+                            onclick="show9()">關閉</a>
+                    </div>
+                </div>
+                <!--success-->
+                <!--popup-->
+            </div>
+        </div>
         <!-- 提交成功 start -->
         <div id="show5" class="ios-dialog" style="display: none;">
             <div class="dialog-mask">
@@ -337,8 +356,10 @@
                                                 <p class="bank-name">中国银行</p>
                                             </div>
                                             <div class="bank-rt">
-                                                <div class="detail-uploader btn btn-secondary rounded-pill">查看已上傳圖片
-                                                </div>
+                                                <a href="javascript:void(0)"
+                                                    class="detail-uploader btn btn-secondary rounded-pill"
+                                                    onclick="show9()">查看已上傳圖片
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="bank-card__detail">
@@ -378,8 +399,10 @@
                                                 <p class="bank-name">中国银行</p>
                                             </div>
                                             <div class="bank-rt">
-                                                <div class="detail-uploader btn btn-secondary rounded-pill">查看已上傳圖片
-                                                </div>
+                                                <a href="javascript:void(0)"
+                                                    class="detail-uploader btn btn-secondary rounded-pill"
+                                                    onclick="show9()">查看已上傳圖片
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="bank-card__detail">
@@ -497,6 +520,14 @@
         //popup-show/hide
         function show8() {
             var x = document.getElementById('show8');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+        function show9() {
+            var x = document.getElementById('show9');
             if (x.style.display === 'none') {
                 x.style.display = 'block';
             } else {
