@@ -162,6 +162,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="com-cell">
+                            <div class="com-cell__form cell__form-item">
+                                <!-- form-uploader--active為已上傳後的樣式，拿掉則為未上傳的default -->
+                                <div class="form-uploader form-uploader--active">
+                                    <div class="form-uploader__img">
+                                        <div class="img-default"></div>
+                                        <input type="file" class="form-uploader__input"
+                                            onchange="handleFiles.bind(this)()">
+                                    </div>
+                                    <div class="form-uploader__text">限JPG. PNG档</div>
+                                    <img class="form-uploader__img-full" src="images/common/demo/index/banner.png"
+                                        alt="">
+                                </div>
+                                <a href="javascript:void(0);" id="restore"
+                                    class="btn btn-secondary rounded-pill btn-ripple btn-event btn--disabled">
+                                    <p class="restore__text">清除</p>
+                                </a>
+                            </div>
+                        </div>
+
                         <div class="com-cell-info ">
                             安全密码 默认
                             <span class="text-red">

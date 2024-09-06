@@ -4088,6 +4088,68 @@ div::-webkit-scrollbar {
 .com-cell__form .form-title + .form-select .form-select__sel {
   padding-top: 12px;
 }
+.com-cell__form .form-uploader {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+.com-cell__form .form-uploader__img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #f3f4f7;
+  overflow: hidden;
+  position: relative;
+  padding: 4px 8px;
+}
+.com-cell__form .form-uploader__img .img-default {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  -webkit-mask-image: url('../images/common/image/icon/icon_updatephoto@2x.png');
+  mask-image: url('../images/common/image/icon/icon_updatephoto@2x.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #515561;
+}
+.com-cell__form .form-uploader__img .img-icon,
+.com-cell__form .form-uploader__img img {
+  width: 100%;
+}
+.com-cell__form .form-uploader__img-full {
+  display: none;
+  width: 100%;
+}
+.com-cell__form .form-uploader__text {
+  font-size: 14px;
+  padding-left: 16px;
+  color: #515561;
+}
+.com-cell__form .form-uploader__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+}
+.com-cell__form .form-uploader--active .form-uploader__img-full {
+  display: block;
+}
+.com-cell__form .form-uploader--active .form-uploader__img,
+.com-cell__form .form-uploader--active .form-uploader__text {
+  display: none;
+}
 .com-cell__form .form-group,
 .com-cell__form .form-select {
   display: flex;
@@ -11180,6 +11242,24 @@ div::-webkit-scrollbar {
   align-items: center;
   padding: 0px 32px;
 }
+.bind .bind-card__item .bank-card__bank .bank-lf {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.bind .bind-card__item .bank-card__bank .bank-rt {
+  width: 30%;
+  margin-left: auto;
+}
+.bind .bind-card__item .bank-card__bank .detail-uploader {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
+  padding: 4px;
+  font-size: 12px;
+}
 .bind .bind-card__item .bank-card__bank .bank-icon {
   flex-shrink: 0;
   width: 36px;
@@ -11194,16 +11274,17 @@ div::-webkit-scrollbar {
   color: #515561;
   margin: 0px;
   padding: 0px 4px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .bind .bind-card__item .bank-card__detail {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: end;
   min-height: 90px;
   padding: 16px 32px;
+}
+.bind .bind-card__item .bank-card__detail .detail-rt {
+  display: flex;
+  align-items: end;
+  margin-left: auto;
 }
 .bind .bind-card__item .bank-card__detail .detail-item {
   display: flex;
