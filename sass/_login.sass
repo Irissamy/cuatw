@@ -64,7 +64,7 @@
 
 .entry-form 
   position: relative
-  margin: 0px $space-xxxxl $space-xxxxl
+  margin: 0px 16px 16px
   border-radius: 10px
   border: 1px solid transparent
   background: linear-gradient(to right, #fdeed1 0%, #f5cb9b 100%) border-box
@@ -75,7 +75,7 @@
     flex: 1
     // min-height: 444px
     min-height: 60vh
-    padding: $space-lg $space-xxxxl
+    padding: $space-lg
     border-radius: 10px
     // overflow: hidden
     // background-color: rgba(228,231,241,0.8)
@@ -87,7 +87,7 @@
       top: 0px
       right: 0px
       bottom: 0px
-      width: 55px
+      width: 12%
       background-color: hsla(0,0%,100%,0.3)
       transition: width 0.3s ease-in-out
     
@@ -103,7 +103,7 @@
 
     &--active 
       &:before 
-        width: calc(100% - 55px)
+        width: calc(100% - 12%)
       
     
     .entry-btn-rt,
@@ -115,7 +115,7 @@
       display: flex
       flex-direction: column
       align-items: center
-      width: 55px
+      width: 12%
       padding-top: 60px
     
     .entry-btn-rt 
@@ -217,7 +217,7 @@
 
       .com-cell 
         padding: 0px
-        padding-top: $space-lg
+        padding-top: 8px
         &__form 
           min-height: 40px
           padding: $space-sm 0px
@@ -268,11 +268,11 @@
       
     
     .main-login 
-      padding-right: 55px
+      padding-right: 12%
       opacity: 0
       transform-origin: bottom left
-      transform: translate(55px, 0px)
-      // transform: translate(-55px, 0px)
+      transform: translate(12%, 0px)
+      // transform: translate(-12%, 0px)
       &__title 
         transform-origin: bottom left
         transform: translate(-110px, 0px)
@@ -284,15 +284,18 @@
           transform: translate(0px, 0px)
       .com-cell
         .el-input
+          font-size: 12px
           color: #ffffff  
+          &::placeholder
+            font-size: 12px
       
     
     .main-reg 
-      padding-left: 55px
+      padding-left: 12%
       opacity: 0
       transform-origin: top right
-      transform: translate(-55px, 0px)
-      // transform: translate(55px, 0px)
+      transform: translate(-12%, 0px)
+      // transform: translate(12%, 0px)
       &__title 
         transform-origin: bottom left
         transform: translate(110px, 0px)
@@ -306,8 +309,10 @@
         .el-icon
           //background-color: #3557ca
         .el-input
+          font-size: 12px 
           color: #ffffff
           &::placeholder
+            font-size: 12px
             color: rgba(255, 255, 255, 0.6) 
         .el-value
           &__reveal,

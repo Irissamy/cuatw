@@ -9227,7 +9227,7 @@ div::-webkit-scrollbar {
 
 .entry-form {
   position: relative;
-  margin: 0px 32px 32px;
+  margin: 0px 16px 16px;
   border-radius: 10px;
   border: 1px solid transparent;
   background: linear-gradient(to right, #fdeed1 0%, #f5cb9b 100%) border-box;
@@ -9237,7 +9237,7 @@ div::-webkit-scrollbar {
   position: relative;
   flex: 1;
   min-height: 60vh;
-  padding: 16px 32px;
+  padding: 16px;
   border-radius: 10px;
   background: transparent linear-gradient(180deg, #5a7efa 0%, #375ad3 6%, #3353c1 40%, #375ad3 74%, #3c61e1 96%, #21357b 100%) 0% 0% no-repeat;
 }
@@ -9247,7 +9247,7 @@ div::-webkit-scrollbar {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  width: 55px;
+  width: 12%;
   background-color: hsla(0, 0%, 100%, 0.3);
   transition: width 0.3s ease-in-out;
 }
@@ -9263,7 +9263,7 @@ div::-webkit-scrollbar {
   transform: translate(0px, 0px);
 }
 .entry-form__main--active:before {
-  width: calc(100% - 55px);
+  width: 88%;
 }
 .entry-form__main .entry-btn-rt,
 .entry-form__main .entry-btn-lf {
@@ -9274,7 +9274,7 @@ div::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 55px;
+  width: 12%;
   padding-top: 60px;
 }
 .entry-form__main .entry-btn-rt {
@@ -9375,7 +9375,7 @@ div::-webkit-scrollbar {
 .entry-form__main .main-login .com-cell,
 .entry-form__main .main-reg .com-cell {
   padding: 0px;
-  padding-top: 16px;
+  padding-top: 8px;
 }
 .entry-form__main .main-login .com-cell__form,
 .entry-form__main .main-reg .com-cell__form {
@@ -9436,10 +9436,10 @@ div::-webkit-scrollbar {
   text-align: center;
 }
 .entry-form__main .main-login {
-  padding-right: 55px;
+  padding-right: 12%;
   opacity: 0;
   transform-origin: bottom left;
-  transform: translate(55px, 0px);
+  transform: translate(12%, 0px);
 }
 .entry-form__main .main-login__title {
   transform-origin: bottom left;
@@ -9453,13 +9453,20 @@ div::-webkit-scrollbar {
   transform: translate(0px, 0px);
 }
 .entry-form__main .main-login .com-cell .el-input {
+  font-size: 12px;
   color: #ffffff;
 }
+.entry-form__main .main-login .com-cell .el-input::-moz-placeholder {
+  font-size: 12px;
+}
+.entry-form__main .main-login .com-cell .el-input::placeholder {
+  font-size: 12px;
+}
 .entry-form__main .main-reg {
-  padding-left: 55px;
+  padding-left: 12%;
   opacity: 0;
   transform-origin: top right;
-  transform: translate(-55px, 0px);
+  transform: translate(-12%, 0px);
 }
 .entry-form__main .main-reg__title {
   transform-origin: bottom left;
@@ -9473,12 +9480,15 @@ div::-webkit-scrollbar {
   transform: translate(0px, 0px);
 }
 .entry-form__main .main-reg .com-cell .el-input {
+  font-size: 12px;
   color: #ffffff;
 }
 .entry-form__main .main-reg .com-cell .el-input::-moz-placeholder {
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.6);
 }
 .entry-form__main .main-reg .com-cell .el-input::placeholder {
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.6);
 }
 .entry-form__main .main-reg .com-cell .el-value__reveal, .entry-form__main .main-reg .com-cell .el-value__clear {
@@ -13213,5 +13223,41 @@ div::-webkit-scrollbar {
   .bulletin-popup {
     width: auto;
     max-width: 500px;
+  }
+  .entry-form {
+    margin: 0px 32px 32px;
+  }
+  .entry-form__main {
+    padding: 16px 32px;
+  }
+  .entry-form__main .entry-btn-rt,
+  .entry-form__main .entry-btn-lf {
+    width: 55px;
+  }
+  .entry-form__main .main-reg {
+    padding-left: 55px;
+    transform: translate(0px, 0px);
+  }
+  .entry-form__main .main-login {
+    padding-right: 55px;
+    transform: translate(0px, 0px);
+  }
+  .entry-form__main .main-reg .com-cell, .entry-form__main .main-login .com-cell {
+    padding-top: 16px;
+  }
+  .entry-form__main .main-reg .com-cell .el-input, .entry-form__main .main-login .com-cell .el-input {
+    font-size: 16px;
+  }
+  .entry-form__main .main-reg .com-cell .el-input::-moz-placeholder, .entry-form__main .main-login .com-cell .el-input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .entry-form__main .main-reg .com-cell .el-input::placeholder, .entry-form__main .main-login .com-cell .el-input::placeholder {
+    font-size: 16px;
+  }
+  .entry-form__main:before {
+    width: 55px;
+  }
+  .entry-form__main--active:before {
+    width: calc(100% - 55px);
   }
 }/*# sourceMappingURL=main.css.map */
