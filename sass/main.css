@@ -5752,6 +5752,9 @@ div::-webkit-scrollbar {
   padding: 16px 0;
   margin: auto;
 }
+.bulletin-popup .com-cell {
+  padding: 8px 16px 4px;
+}
 
 .grab-popup {
   background-color: #ffe1c3;
