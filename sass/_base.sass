@@ -8,7 +8,8 @@
 
 html,
 body 
-  touch-action: manipulation
+  touch-action: none
+  -webkit-user-drag: none
   overflow: hidden
 
 
@@ -60,7 +61,12 @@ input[type='number']
 //   -webkit-text-fill-color: #6a3a3a-txt !important //关于接输入框文字颜色
 // 
 
+input, textarea 
+  font-size: initial
+
+
 div 
+  -webkit-user-drag: none
   &::-webkit-scrollbar 
     display: none /* 不顯示滾動條 */
   
