@@ -24,7 +24,6 @@
   left: 0
   margin: auto
   max-width: 576px
-  height: 100%
   overflow: hidden
 .layout-content 
   width: 100%
@@ -35,6 +34,8 @@
   z-index: 1000
   flex-direction: column
   overflow-y: auto
+  -webkit-overflow-scrolling: touch
+  @extend %safe-area-bottom
   &.-index
     background-image: url('../images/common/image/header-1.png')
     background-size: cover
@@ -45,22 +46,19 @@
     .com-inner__content
       flex: 1
   &.-fix-float
-    overflow-y: hidden
+    // overflow-y: hidden
     .com-inner
       -webkit-user-drag: none
-      overflow-y: hidden
+      // overflow-y: hidden
     .com-inner__content
       display: flex
       flex-direction: column
-      overflow-y: hidden
+      flex: 1
+      overflow-y: auto
       padding: 16px 16px
       -webkit-user-drag: none
     .float-element
-      position: sticky
-      bottom: 0
-      margin-top: auto
-      margin-bottom: 0px
-      -webkit-user-drag: none
+      margin-bottom: 0
       input
         touch-action: none
 
