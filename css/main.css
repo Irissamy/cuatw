@@ -12753,6 +12753,7 @@ textarea {
   flex-direction: column;
   height: 100%;
   overflow-y: auto;
+  padding-bottom: 75px;
 }
 .wcr-list__item {
   display: flex;
@@ -12973,8 +12974,10 @@ textarea {
 }
 .wcr--left .stock-message__content,
 .wcr--right .stock-message__content {
+  width: 100%;
   font-size: 12px;
   line-height: 19px;
+  word-wrap: break-word;
 }
 
 .list__item__avatar {
