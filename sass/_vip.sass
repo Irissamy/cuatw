@@ -1,0 +1,390 @@
+.vip-swiper
+  width: 100%
+  padding: 20px 0px
+  .swiper-slide
+    position: relative
+    width: 296px
+    &__status
+      position: absolute
+      top: 0
+      left: 3px
+      width: 56px
+      height: 15px
+      background-image: url('../images/common/demo/vip/lock.png')
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      &--unlock
+        background-image: url('../images/common/demo/vip/unlock.png')
+    &__img
+      display: block
+      width: 100%
+    &__info
+      position: absolute
+      top: 90px
+      left: 30px
+      .info-item
+        font-size: 12px
+        color: white
+        margin-top: 4px
+        &:first-child
+          margin-top: 0px
+.vip-content
+  padding: 6px
+.vip-progress
+  width: 100%
+  height: 83px
+  padding: 0px 15px
+  border-radius: 8px
+  background-color: white
+  &__content
+    position: relative
+    display: flex
+    justify-content: center
+    width: 100%
+    height: 100%
+    .progress-pre,
+    .progress-next
+      display: flex
+      align-items: center
+      &__icon
+        width: 24px
+        height: 24px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+      &__title
+        font-size: 12px
+        color: #3f5075
+        padding-left: 4px
+    .progress-pre__icon
+      background-image: url('../images/common/demo/vip/progress-pre.png')
+    .progress-next__icon
+      background-image: url('../images/common/demo/vip/progress-next.png')
+    .progress-bar
+      position: relative
+      align-self: center
+      flex: 1
+      height: 10px
+      margin: 0px 4px
+      background-image: url('../images/common/demo/vip/progress.png')
+      background-size: contain
+      background-position: center
+      background-repeat: no-repeat
+      &__bar
+        width: 20%
+        height: 100%
+        border-radius: 5px
+        background-image: url('../images/common/demo/vip/progress-bar.png')
+        // background-size: auto 100%;
+        background-image: linear-gradient(45deg,#d8987f 25%,#efcec3 25%,#efcec3 50%,#d8987f 50%,#d8987f 75%,#efcec3 75%,#efcec3)
+        background-size: 12px 12px
+        animation: progress 5s linear infinite
+        transition: all 0.6s
+      &__number
+        position: absolute
+        top: -20px
+        left: 0px
+        font-size: 12px
+        color: #98a3b1
+    .progress-info
+      position: absolute
+      bottom: 10px
+      &__text
+        font-size: 12px
+        color: #98a3b1
+
+.vip-detail
+  width: 100%
+  margin-top: 16px
+  &__header
+    min-height: 40px
+    padding: 12px 0px 8px
+    border-radius: 12px 12px 0px 0px
+    background-color: #f7fafc
+    .header-title
+      position: relative
+      font-size: 14px
+      font-weight: 600
+      color: #3f5075
+      padding-left: 16px
+      &::before
+        content: ''
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 5px
+        height: 14px
+        background-image: url('../images/common/demo/vip/title.png')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+  &__content
+    border-radius: 0px 0px 12px 12px
+    background-color: white
+  .quota-list
+    display: flex
+    padding: 15px 10px
+    &__item
+      display: flex
+      align-items: center
+      flex: 1
+      padding: 12px
+      margin-right: 8px
+      background-color: #f6f8ff
+      animation: fadeInDown 1s ease-out 1
+      .item-icon
+        width: 30px
+        height: 30px
+        &__img
+          display: block
+          width: 100%
+      .item-info
+        padding-left: 8px
+        &__title
+          color: #3f5075
+          .title-text
+            font-size: 16px
+            font-weight: 600
+          .title-small
+            font-size: 12px
+        &__dec
+          font-size: 12px
+          color: #98a3b1
+          padding-top: 4px
+      &:last-child
+        margin-right: 0px
+  .vip-promo
+    display: flex
+    flex-wrap: wrap
+    overflow: hidden
+    animation: flipInX 0.8s ease-out 1
+    &__item
+      width: 33.3333%
+      min-height: 53px
+      padding: 16px
+
+      .item-title
+        text-align: center
+        &__text
+          font-size: 24px
+          color: #d7967f
+          font-family: DINAlternate-Bold, -apple-system, Hiragino Sans GB,Monospaced Number, Helvetica Neue, Helvetica, Arial, sans-serif
+      .item-dec
+        padding-top: 12px
+        text-align: center
+        &__text
+          font-size: 12px
+          color: #3f5075
+    &--active
+      height: 100%
+      animation: pulse 0.8s ease-out 1
+  .btn-more
+    width: 100%
+    padding: 0px 12px
+    cursor: pointer
+    &__item
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 36px
+      .item-text
+        font-size: 12px
+        color: #dee0e8
+        padding-right: 4px
+      .item-arrow
+        display: block
+        width: 12px
+        height: 12px
+        transition: 0.3s
+  .vip-award
+    padding: 8px
+    &__item
+      display: flex
+      align-items: center
+      background-color: #f5f8ff
+      padding: 8px
+      margin-bottom: 8px
+      animation: flipInX 0.8s ease-out 1
+      &:last-child
+        margin-bottom: 0px
+        animation: flipInX 0.8s ease-out 0.4s 1
+      .item-lf
+        display: flex
+        align-items: center
+        &__icon
+          width: 48px
+          height: 48px
+          .icon-img
+            display: block
+            width: 100%
+        &__info
+          padding-left: 8px
+          .info-title
+            font-size: 12px
+            color: #3f5075
+          .info-money
+            font-size: 14px
+            font-weight: 600
+            color: #3f5075
+      .item-rt
+        margin-left: auto
+        &__text
+          font-size: 14px
+          font-weight: 600
+          color: #d7967f
+        &__btn
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 82px
+          height: 32px
+          border-radius: 4px
+          background: url('../images/common/demo/vip/award-btn_lf.png') 0 0 no-repeat,url('../images/common/demo/vip/award-btn_rt.png')100% 0 no-repeat,url('../images/common/demo/vip/award-btn_center.png')0 0 repeat-x
+          background-size: auto 100%
+          cursor: pointer
+          .btn-text
+            font-size: 12px
+            font-weight: 600
+            color: white
+  .vip-editor
+    padding: 8px
+  .bob-vip-table
+    table-layout: fixed
+    width: 100%
+    overflow-x: auto
+    border-spacing: 0px
+    padding: 8px
+    .thead
+      .tr
+        background-color: #aeb6c2
+        .td
+          height: 34px
+          padding: 4px
+          text-align: center
+          &:first-child
+            background-color: #d7967f
+      .table-text
+        font-size: 12px
+        color: white
+        white-space: nowrap
+    .tbody
+      .tr
+        background-color: white
+        .td
+          &:first-child
+            background-color: rgba(152,163,177,.8)
+        &:nth-child(even)
+          background-color: rgba(152,163,177,.1)
+          .td
+            &:first-child
+              background-color: #98a3b1
+        .td
+          height: 34px
+          padding: 8px
+          text-align: center
+          &.-level
+            position: relative
+            &::before
+              content: ''
+              position: absolute
+              top: 0
+              left: 0
+              z-index: 0
+              width: calc(100% + 6px)
+              height: 100%
+              background-image: url('../images/common/demo/vip/vip-table-active.png')
+              background-size: cover
+              background-position: center
+              background-repeat: no-repeat
+          .vip-level
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            &__icon
+              width: 20px
+              height: 20px
+              flex-shrink: 0
+              .icon-img
+                display: block
+                width: 100%
+            &__text
+              font-size: 12px
+              color: white
+      .table-text
+        font-size: 12px
+        color: #98a3b1
+        &.-hightlight
+          color: #d7967f
+  .rule-remind
+    padding: 0px 8px 16px
+    &__text
+      font-size: 12px
+      color: #9aa4c2
+  .vip-rule
+    width: 100%
+    padding: 16px
+    &__item
+      display: flex
+      padding-top: 8px
+      .item-number
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 20px
+        height: 20px
+        flex-shrink: 0
+        border-radius: 50%
+        background-image: url('../images/common/demo/vip/rule-title-bg.png')
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        &__text
+          font-size: 12px
+          color: white
+      .item-rule
+        padding-left: 8px
+        &__title
+          font-size: 14px
+          color: #414655
+        &__text
+          font-size: 12px
+          color: #9aa4c2
+          padding-top: 8px
+          line-height: 20px
+        &__table
+          width: 100%
+          margin-top: 8px
+          border-spacing: 0px
+          border-radius: 8px
+          border: 1px solid #dee0e8
+          overflow: hidden
+          .thead
+            .tr
+              background-color: #dee0e8
+              .td
+                height: 36px
+                padding: 4px
+                text-align: center
+                .td-text
+                  font-size: 12px
+                  color: #b1bccc
+          .tbody
+            .tr
+              .td
+                height: 36px
+                padding: 4px
+                text-align: center
+                border-right: 1px solid #dee0e8
+                .td-text
+                  font-size: 12px
+                  color: #3f5075
+                &:last-child
+                  border-right: 0px
+      &:first-child
+        padding-top: 0px
+    &__remind
+      font-size: 12px
+      color: #4993de
+      padding: 8px 16px 8px 24px

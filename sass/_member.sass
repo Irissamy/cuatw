@@ -28,7 +28,23 @@
         display: flex
         align-items: center
         justify-content: center
-      
+
+      &__vip
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        font-size: 20px
+        &.-normal
+          background: linear-gradient(135deg,#bac2ff 30%,#002e99 100%)
+        &.-gold
+          background: linear-gradient(135deg,#fff1b8 30%,#ab862b 100%)
+        &.-silver
+          background: linear-gradient(135deg,#ffffff 50%,#8d90a2 100%)
+
       &__upload-icon,
       &__input 
         position: absolute
@@ -376,6 +392,9 @@
     display: flex
     align-items: center
     .user-m__icon 
+      display: flex
+      justify-content: center
+      align-items: center
       width: 76px
       height: 76px
       background-color: hsla(0,0%,100%,0.4)
@@ -391,7 +410,21 @@
         background-size: cover
         background-position: center
         overflow: hidden
-      
+      &__vip
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        font-size: 20px
+        &.-normal
+          background: linear-gradient(135deg,#bac2ff 30%,#002e99 100%)
+        &.-gold
+          background: linear-gradient(135deg,#fff1b8 30%,#ab862b 100%)
+        &.-silver
+          background: linear-gradient(135deg,#ffffff 50%,#8d90a2 100%)
     
     .user-m__name 
       font-size: 16px
