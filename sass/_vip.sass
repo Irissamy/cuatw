@@ -1,9 +1,51 @@
 .vip-swiper
   width: 100%
   padding: 20px 0px
+  .carousel-inner
+    background: transparent
   .swiper-slide
     position: relative
-    width: 296px
+    width: 100%
+    margin: auto
+    &__card
+    position: relative
+    height: 150px
+    padding: 25px 36px 15px
+    background-image: url('../images/common/demo/vip/card-bg.png')
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    .card-title
+      font-size: 30px
+      font-weight: 900
+      font-style: italic
+      color: #fff
+    .card-level
+      position: absolute
+      top: 0
+      right: 25px
+      width: 54px
+    .card-info
+      position: absolute
+      left: 36px
+      bottom: 25px
+      right: 36px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .item-title
+          font-size: 14px
+          font-weight: 600
+          color: white
+          padding-bottom: 4px
+        .item-text
+          font-size: 12px
+          color: white
     &__status
       position: absolute
       top: 0
@@ -77,7 +119,7 @@
         border-radius: 5px
         background-image: url('../images/common/demo/vip/progress-bar.png')
         // background-size: auto 100%;
-        background-image: linear-gradient(45deg,#d8987f 25%,#efcec3 25%,#efcec3 50%,#d8987f 50%,#d8987f 75%,#efcec3 75%,#efcec3)
+        background-image: linear-gradient(45deg,#1d3d74 25%,#2f56bd 25%,#2f56bd 50%,#1d3d74 50%,#1d3d74 75%,#2f56bd 75%,#2f56bd)
         background-size: 12px 12px
         animation: progress 5s linear infinite
         transition: all 0.6s
@@ -108,17 +150,6 @@
       font-weight: 600
       color: #3f5075
       padding-left: 16px
-      &::before
-        content: ''
-        position: absolute
-        top: 0px
-        left: 0px
-        width: 5px
-        height: 14px
-        background-image: url('../images/common/demo/vip/title.png')
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
   &__content
     border-radius: 0px 0px 12px 12px
     background-color: white
@@ -168,7 +199,7 @@
         text-align: center
         &__text
           font-size: 24px
-          color: #d7967f
+          color: #4d8aff
           font-family: DINAlternate-Bold, -apple-system, Hiragino Sans GB,Monospaced Number, Helvetica Neue, Helvetica, Arial, sans-serif
       .item-dec
         padding-top: 12px
@@ -232,16 +263,13 @@
         &__text
           font-size: 14px
           font-weight: 600
-          color: #d7967f
+          color: #4d8aff
         &__btn
           display: flex
           justify-content: center
           align-items: center
           width: 82px
           height: 32px
-          border-radius: 4px
-          background: url('../images/common/demo/vip/award-btn_lf.png') 0 0 no-repeat,url('../images/common/demo/vip/award-btn_rt.png')100% 0 no-repeat,url('../images/common/demo/vip/award-btn_center.png')0 0 repeat-x
-          background-size: auto 100%
           cursor: pointer
           .btn-text
             font-size: 12px
