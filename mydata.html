@@ -118,6 +118,10 @@
         <div class="layout-content">
             <div class="com-inner">
                 <div class="tab -scrollable">
+                    <a class="tab__item tab__item--active" href="javascript:void(0);"
+                        onclick="openCity(event, 'show7')">
+                        <span class="text">我的資料</span>
+                    </a>
                     <a class="tab__item" href="javascript:void(0);" onclick="openCity(event, 'show1')">
                         <span class="text">登录设定</span>
                     </a>
@@ -127,13 +131,49 @@
                     <a class="tab__item" href="javascript:void(0);" onclick="openCity(event, 'show3')">
                         <span class="text">联系方式</span>
                     </a>
-                    <a class="tab__item tab__item--active" href="javascript:void(0);"
-                        onclick="openCity(event, 'show4')">
+                    <a class="tab__item" href="javascript:void(0);" onclick="openCity(event, 'show4')">
                         <span class="text">绑定银行卡</span>
                     </a>
                 </div>
                 <div class="com-inner__content">
-
+                    <div id="show7" class="mydata">
+                        <div class="ui-tableviewcell -default -value1 -subtitle">
+                            <div class="ui-tableviewcell__text">
+                                <p class="title">會員帳號</p>
+                                <p class="text">player01</p>
+                            </div>
+                        </div>
+                        <div class="ui-tableviewcell -default -value1 -subtitle">
+                            <div class="ui-tableviewcell__text">
+                                <p class="title">真實姓名</p>
+                                <p class="text">金富發</p>
+                            </div>
+                        </div>
+                        <div class="ui-tableviewcell -default -value1 -subtitle">
+                            <div class="ui-tableviewcell__text">
+                                <p class="title">生日</p>
+                                <p class="text -danger">尚未驗證</p>
+                            </div>
+                            <div class="detail">
+                                <a class="btn btn-primary btn-ripple rounded-pill" href="verified.html">前往驗證</a>
+                            </div>
+                        </div>
+                        <div class="ui-tableviewcell -default -value1 -subtitle">
+                            <div class="ui-tableviewcell__text">
+                                <p class="title">身分證號</p>
+                                <p class="text -danger">尚未驗證</p>
+                            </div>
+                            <div class="detail">
+                                <a class="btn btn-primary btn-ripple rounded-pill" href="verified.html">前往驗證</a>
+                            </div>
+                        </div>
+                        <div class="ui-tableviewcell -default -value1 -subtitle">
+                            <div class="ui-tableviewcell__text">
+                                <p class="title">錢包餘額</p>
+                                <p class="text">0</p>
+                            </div>
+                        </div>
+                    </div>
                     <div id="show1" class="mydata" style="display: none;">
                         <div class="cell-list">
                             <div class="com-cell">
@@ -324,7 +364,7 @@
                         </a>
                     </div>
 
-                    <div id="show4" class="mydata">
+                    <div id="show4" class="mydata" style="display: none;">
                         <div class="bind">
                             <div class="alert alert-danger">
                                 <div class="alert__img">

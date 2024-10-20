@@ -1,6 +1,25 @@
 .com-cell-list + .cell-list 
   padding-top: $space-xs
 
+.com-cell-title
+  display: flex 
+  align-items: center
+  &__text
+    margin: 0px
+    font-size: 16px
+    font-weight: 600
+    color: #ffffff
+  .btn
+    width: auto
+    height: auto
+    padding: 8px
+    margin-left: auto
+    font-size: 12px
+
+.com-cell-title + .com-cell
+  padding-top: 8px
+.com-cell + .com-cell-title
+  padding-top: 8px
 
 .com-cell 
   display: flex

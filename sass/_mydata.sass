@@ -98,8 +98,20 @@
     background-image: none
     background-color: hsla(0,0%,100%,0.3)
     &__text 
+      flex-direction: row
       border-bottom: 1px solid #eceef4
-    
+      .title
+        width: 25%
+      .text
+        font-size: 12px
+        margin: 0px
+        &.-danger
+          color: #ff3d3d
+    .detail 
+      .btn
+        font-size: 12px
+        height: auto
+        padding: 8px
   
 
 

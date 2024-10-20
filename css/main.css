@@ -3967,6 +3967,32 @@ textarea {
   padding-top: 4px;
 }
 
+.com-cell-title {
+  display: flex;
+  align-items: center;
+}
+.com-cell-title__text {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.com-cell-title .btn {
+  width: auto;
+  height: auto;
+  padding: 8px;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.com-cell-title + .com-cell {
+  padding-top: 8px;
+}
+
+.com-cell + .com-cell-title {
+  padding-top: 8px;
+}
+
 .com-cell {
   display: flex;
   flex-direction: column;
@@ -11222,7 +11248,23 @@ textarea {
   background-color: hsla(0, 0%, 100%, 0.3);
 }
 .mydata .ui-tableviewcell__text {
+  flex-direction: row;
   border-bottom: 1px solid #eceef4;
+}
+.mydata .ui-tableviewcell__text .title {
+  width: 25%;
+}
+.mydata .ui-tableviewcell__text .text {
+  font-size: 12px;
+  margin: 0px;
+}
+.mydata .ui-tableviewcell__text .text.-danger {
+  color: #ff3d3d;
+}
+.mydata .ui-tableviewcell .detail .btn {
+  font-size: 12px;
+  height: auto;
+  padding: 8px;
 }
 
 .mydata-content {
