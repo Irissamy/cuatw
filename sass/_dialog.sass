@@ -49,7 +49,7 @@
       mask-position: center
       mask-size: contain
       mask-repeat: no-repeat
-      background-color: #d4bba1
+      background-color: #4d8aff
     
   
 
@@ -67,7 +67,7 @@
 
     &__top 
       display: flex
-      justify-content: space-between
+      justify-content: center
       padding: $space-md
     
   
@@ -150,7 +150,20 @@
       flex: auto
       &:last-child 
         margin-right: 0
-
+  .ui-tableviewcell
+    margin: 0
+    background: transparent
+    &__text 
+      flex-direction: row
+      border-bottom: 1px solid #eceef4
+      .title
+        width: 25%
+        color: #515561
+      .text
+        font-size: 12px
+        margin: 0px
+        &.-danger
+          color: #ff3d3d
 .converting 
   .xfe__icon 
     background-image: url('../images/common/image/gif_transform.gif')

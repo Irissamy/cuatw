@@ -8402,7 +8402,7 @@ textarea {
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: #d4bba1;
+  background-color: #4d8aff;
 }
 .dialog__header {
   display: flex;
@@ -8418,7 +8418,7 @@ textarea {
 }
 .dialog__header__top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 12px;
 }
 .dialog__body {
@@ -8504,6 +8504,25 @@ textarea {
 .dialog__body-footer .btn-primary:last-child,
 .dialog__body-footer .btn-secondary:last-child {
   margin-right: 0;
+}
+.dialog .ui-tableviewcell {
+  margin: 0;
+  background: transparent;
+}
+.dialog .ui-tableviewcell__text {
+  flex-direction: row;
+  border-bottom: 1px solid #eceef4;
+}
+.dialog .ui-tableviewcell__text .title {
+  width: 25%;
+  color: #515561;
+}
+.dialog .ui-tableviewcell__text .text {
+  font-size: 12px;
+  margin: 0px;
+}
+.dialog .ui-tableviewcell__text .text.-danger {
+  color: #ff3d3d;
 }
 
 .converting .xfe__icon {
@@ -10463,6 +10482,12 @@ textarea {
 .pay-group__item .pay-info .pay-info__text + .pay-info__text-danger {
   padding-bottom: 0px;
 }
+.pay-group.-row {
+  display: flex;
+}
+.pay-group.-row .pay-group__item {
+  border: none;
+}
 
 .pay__step {
   padding-top: 16px;
@@ -11353,52 +11378,6 @@ textarea {
 .bind {
   width: 100%;
 }
-.bind .add-card-btn {
-  display: block;
-  width: 100%;
-  margin-bottom: 16px;
-  background-color: #ffffff;
-  border: 1px solid #eceef4;
-  border-radius: 6px;
-}
-.bind .add-card-btn__content {
-  min-height: 76px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-}
-.bind .add-card-btn__content .btn-icon {
-  flex-shrink: 0;
-  width: 36px;
-  height: 36px;
-  -webkit-mask-image: url('../images/common/image/icon/icon_addcard@2x.png');
-  mask-image: url('../images/common/image/icon/icon_addcard@2x.png');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background-color: #4d8aff;
-}
-.bind .add-card-btn__content .btn-text {
-  font-size: 16px;
-  color: #515561;
-  padding-left: 8px;
-  margin: 0px;
-}
-.bind .add-card-btn--disabled {
-  background-color: #eceef4;
-}
-.bind .add-card-btn--disabled .btn-icon {
-  -webkit-mask-image: url('../images/common/image/icon/icon_nocard@2x.png');
-  mask-image: url('../images/common/image/icon/icon_nocard@2x.png');
-  background-color: rgba(255, 255, 255, 0.6);
-}
-.bind .add-card-btn--disabled .btn-text {
-  color: rgba(255, 255, 255, 0.6);
-}
 .bind .bind-card {
   width: 100%;
 }
@@ -11597,6 +11576,53 @@ textarea {
 }
 .bind .alert {
   padding-top: 0px;
+}
+
+.add-card-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border: 1px solid #eceef4;
+  border-radius: 6px;
+}
+.add-card-btn__content {
+  min-height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.add-card-btn__content .btn-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  -webkit-mask-image: url('../images/common/image/icon/icon_addcard@2x.png');
+  mask-image: url('../images/common/image/icon/icon_addcard@2x.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: #4d8aff;
+}
+.add-card-btn__content .btn-text {
+  font-size: 16px;
+  color: #515561;
+  padding-left: 8px;
+  margin: 0px;
+}
+.add-card-btn--disabled {
+  background-color: #eceef4;
+}
+.add-card-btn--disabled .btn-icon {
+  -webkit-mask-image: url('../images/common/image/icon/icon_nocard@2x.png');
+  mask-image: url('../images/common/image/icon/icon_nocard@2x.png');
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.add-card-btn--disabled .btn-text {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .mywallet-filter {
@@ -12011,6 +12037,137 @@ textarea {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.share .share-list__item {
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: block;
+}
+.share .share-list__item:last-child {
+  margin-bottom: 0;
+}
+.share .share-list__content {
+  position: relative;
+  padding: 16px;
+  padding-bottom: 8px;
+}
+.share .arrow-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+}
+.share .arrow-btn__text {
+  font-size: 12px;
+  color: #4d8aff;
+}
+.share .arrow-btn__icon {
+  display: block;
+  width: 24px;
+}
+.share .share-wallet {
+  color: #786464;
+  display: flex;
+  align-items: center;
+}
+.share .share-wallet__img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.share .share-wallet__text {
+  padding: 0 8px;
+}
+.share .share-wallet__name {
+  margin: 0;
+  padding-bottom: 4px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.share .share-wallet__money {
+  font-size: 16px;
+  font-weight: 600;
+}
+.share .share-head {
+  color: #4d8aff;
+  font-size: 12px;
+  margin: 0 0 8px;
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #4d8aff;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.share .share-info {
+  color: #909abb;
+}
+.share .share-info__title {
+  margin: 0;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.share .share-info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+.share .share-info .list__text {
+  display: flex;
+  overflow: hidden;
+  font-size: 12px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  line-height: 1.2;
+}
+.share .share-info .list__text__title {
+  flex-shrink: 0;
+}
+.share .share-info .list__text__result {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.share .share-info .list__collapse {
+  padding: 0px;
+  transition: height 0.3s ease;
+}
+.share .btn-group {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.share .btn-group .btn {
+  width: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  white-space: nowrap;
+  padding: 8px;
+  font-size: 12px;
+  line-height: 1;
+  margin-right: 8px;
+}
+.share .btn-group .btn:last-child {
+  margin-right: 0px;
+}
+.share .collapse {
+  height: 100%;
+  transition: height 0.3s ease;
+}
+.share .collapse:not(.show) {
+  display: none;
+  height: 0;
+}
+.share .accordion-button .arrow-btn__icon {
+  transition: transform 0.2s ease-in-out;
+}
+.share .accordion-button:not(.collapsed) .arrow-btn__icon {
+  transform: rotate(-180deg);
 }
 
 .order-filter {

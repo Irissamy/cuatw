@@ -1,43 +1,5 @@
 .bind 
   width: 100%
-  .add-card-btn 
-    display: block
-    width: 100%
-    margin-bottom: $space-lg
-    background-color: #ffffff
-    border: 1px solid #eceef4
-    border-radius: 6px
-    &__content 
-      min-height: 76px
-      display: flex
-      justify-content: center
-      align-items: center
-      padding:$space-lg
-      .btn-icon 
-        flex-shrink: 0
-        width: 36px
-        height: 36px
-        mask-image: url('../images/common/image/icon/icon_addcard@2x.png')
-        mask-size: contain
-        mask-position: center
-        mask-repeat: no-repeat
-        background-color: #4d8aff
-      
-      .btn-text 
-        font-size: 16px
-        color: #515561
-        padding-left: $space-sm
-        margin: 0px
-         
-    &--disabled 
-      background-color: #eceef4
-      .btn-icon 
-        mask-image: url('../images/common/image/icon/icon_nocard@2x.png')
-        background-color: rgba(255, 255, 255, 0.6)
-      
-      .btn-text 
-        color: rgba(255, 255, 255, 0.6)
-      
   .bind-card 
     width: 100%
     &__item 
@@ -202,3 +164,40 @@
     padding-top: 0px
   
 
+.add-card-btn 
+    display: block
+    width: 100%
+    margin-bottom: $space-lg
+    background-color: #ffffff
+    border: 1px solid #eceef4
+    border-radius: 6px
+    &__content 
+      min-height: 76px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding:$space-lg
+      .btn-icon 
+        flex-shrink: 0
+        width: 36px
+        height: 36px
+        mask-image: url('../images/common/image/icon/icon_addcard@2x.png')
+        mask-size: contain
+        mask-position: center
+        mask-repeat: no-repeat
+        background-color: #4d8aff
+      
+      .btn-text 
+        font-size: 16px
+        color: #515561
+        padding-left: $space-sm
+        margin: 0px
+         
+    &--disabled 
+      background-color: #eceef4
+      .btn-icon 
+        mask-image: url('../images/common/image/icon/icon_nocard@2x.png')
+        background-color: rgba(255, 255, 255, 0.6)
+      
+      .btn-text 
+        color: rgba(255, 255, 255, 0.6)
