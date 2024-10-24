@@ -2445,6 +2445,11 @@ textarea {
   mask-image: url('../images/common/image/icon/icon_verification_code@2x.png');
   background-color: rgba(255, 255, 255, 0.6);
 }
+.el-icon.-icon_search {
+  -webkit-mask-image: url('../images/common/image/icon/icon_navsearch@2x.png');
+  mask-image: url('../images/common/image/icon/icon_navsearch@2x.png');
+  background-color: #515561;
+}
 
 .el-radio {
   display: flex;
@@ -8511,10 +8516,11 @@ textarea {
 }
 .dialog .ui-tableviewcell__text {
   flex-direction: row;
+  align-items: center;
   border-bottom: 1px solid #eceef4;
 }
 .dialog .ui-tableviewcell__text .title {
-  width: 25%;
+  width: 30%;
   color: #515561;
 }
 .dialog .ui-tableviewcell__text .text {
@@ -8523,6 +8529,19 @@ textarea {
 }
 .dialog .ui-tableviewcell__text .text.-danger {
   color: #ff3d3d;
+}
+.dialog .ui-tableviewcell .form-textarea {
+  resize: none;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.dialog .ui-tableviewcell .com-cell {
+  width: 70%;
+}
+.dialog .ui-tableviewcell .com-cell__form {
+  font-size: 12px;
 }
 
 .converting .xfe__icon {
@@ -11628,6 +11647,10 @@ textarea {
 .mywallet-filter {
   padding: 8px;
   background-color: hsla(0, 0%, 100%, 0.5);
+}
+.mywallet-filter .com-cell__form {
+  min-height: 36px;
+  padding: 4px 12px;
 }
 .mywallet-filter .mywallet-select {
   width: 100%;
@@ -14974,6 +14997,56 @@ textarea {
 .maintain__text {
   margin: 0;
   color: #ccc5a4;
+}
+
+.member-list .table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.member-list .table .tr .td,
+.member-list .table .tr .th {
+  padding: 8px;
+  color: #e4e4e4;
+  font-size: 14px;
+  font-weight: 500;
+  height: 38px;
+  text-align: center;
+}
+.member-list .table .tr .td + .td,
+.member-list .table .tr .td + .th,
+.member-list .table .tr .th + .td,
+.member-list .table .tr .th + .th {
+  border-left: 1px solid #656874;
+}
+.member-list .table .tr .td .text,
+.member-list .table .tr .th .text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+.member-list .table .thead {
+  width: 100%;
+}
+.member-list .table .thead .th {
+  width: 100%;
+  color: #ffffff;
+  background-color: #4d8aff;
+}
+.member-list .table .tbody .tr {
+  background-color: rgba(34, 52, 113, 0.8);
+}
+.member-list .table .tbody .tr:nth-child(odd) {
+  background-color: rgb(34, 52, 113);
+}
+.member-list .table .btn {
+  height: auto;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.member-list .table .btn:last-child {
+  margin-bottom: 0px;
 }
 
 @keyframes bounceIn {
