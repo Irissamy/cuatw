@@ -8540,9 +8540,6 @@ textarea {
 .dialog .ui-tableviewcell .com-cell {
   width: 70%;
 }
-.dialog .ui-tableviewcell .com-cell__form {
-  font-size: 12px;
-}
 
 .converting .xfe__icon {
   background-image: url('../images/common/image/gif_transform.gif');
@@ -9597,12 +9594,16 @@ textarea {
   position: absolute;
   top: 0px;
   bottom: 0px;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 12%;
   padding-top: 60px;
+}
+.entry-form__main .entry-btn-rt--active,
+.entry-form__main .entry-btn-lf--active {
+  z-index: 2;
 }
 .entry-form__main .entry-btn-rt {
   right: 0px;
