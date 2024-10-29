@@ -14202,7 +14202,7 @@ textarea {
   height: 150px;
   padding: 25px 36px 15px;
   background-image: url('../images/common/demo/vip/card-bg.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -14224,7 +14224,7 @@ textarea {
   bottom: 25px;
   right: 36px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .vip-swiper .swiper-slide .card-info__item {
@@ -14325,7 +14325,7 @@ textarea {
   height: 10px;
   margin: 0px 4px;
   background-image: url('../images/common/demo/vip/progress.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
