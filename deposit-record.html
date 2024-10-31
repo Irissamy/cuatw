@@ -162,17 +162,17 @@
                     <div class="mywallet-range">
                         查询时间：2020年07月28日00:00~2020年07月28日23:59
                     </div>
-                    <div class="record-cell">
-                        <div class="record-cell__item" style="--animation-order: 1">
-                            <div class="record-cell__content">
-                                <div class="record-header">
+                    <div class="record-list accordion" id="accordionExample">
+                        <div class="record-list__item" style="--animation-order: 1">
+                            <div class="record-list__content">
+                                <h4 class="record-header" id="headingOne">
                                     <div class="record-header__lf">
                                         <h4 class="record-header-title">DG真人</h4>
                                     </div>
                                     <div class="record-header__rt">
                                         <h4 class="record-header-text">2020年 3月11日 09:52:29</h4>
                                     </div>
-                                </div>
+                                </h4>
                                 <h3 class="record-title" data-target="collapse1">
                                     <span class="record-title__text">
                                         <span class="record-title">充值金额</span>
@@ -185,55 +185,53 @@
                                         </div>
                                     </div>
                                 </h3>
-                                <div id="collapse1" class="record-description">
-                                    <div class="record-detail">
-                                        <!-- 成功才會出現入款前後 -->
-                                        <div class="deposit-details">
-                                            <div class="deposit-details__col">
-                                                <span class="deposit-details__col__title">入款前</span>
-                                                <span class="deposit-details__col__money">1,200.00</span>
-                                                <span>元</span>
+                                <div class="record-info">
+                                    <ul class="record-info__list">
+                                        <div class="record-description accordion-collapse collapse" id="collapseOne"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="record-detail accordion-body">
+                                                <!-- 成功才會出現入款前後 -->
+                                                <div class="deposit-details">
+                                                    <div class="deposit-details__col">
+                                                        <span class="deposit-details__col__title">入款前</span>
+                                                        <span class="deposit-details__col__money">1,200.00</span>
+                                                        <span>元</span>
+                                                    </div>
+                                                    <div class="deposit-details__col">
+                                                        <span class="deposit-details__col__title">入款后</span>
+                                                        <span class="deposit-details__col__money">1,500.00</span>
+                                                        <span>元</span>
+                                                    </div>
+                                                </div>
+                                                <div class="method">
+                                                    <h5 class="method__title">交易方式</h5>
+                                                    <p class="method__content">支付宝面对面扫码</p>
+                                                </div>
+                                                <div class="card-number">
+                                                    <h5 class="card-number__title">充值卡号：</h5>
+                                                    <p class="card-number__content">1069******30089</p>
+                                                </div>
                                             </div>
-                                            <div class="deposit-details__col">
-                                                <span class="deposit-details__col__title">入款后</span>
-                                                <span class="deposit-details__col__money">1,500.00</span>
-                                                <span>元</span>
-                                            </div>
                                         </div>
-                                        <div class="method">
-                                            <h5 class="method__title">交易方式</h5>
-                                            <p class="method__content">支付宝面对面扫码</p>
+                                        <div class="record-arrow accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
                                         </div>
-                                        <div class="card-number">
-                                            <h5 class="card-number__title">充值卡号：</h5>
-                                            <p class="card-number__content">1069******30089</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="record-arrow">
-                                    <div class="alert alert-warning">
-                                        <div class="alert__img">
-                                            <div class="alert__img__icon"></div>
-                                        </div>
-                                        <div class="alert__text">
-                                            如您遇到任何问题，请与客服联系
-                                        </div>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="record-cell__item" style="--animation-order: 2">
-                            <div class="record-cell__content">
-                                <div class="record-header">
+                        <div class="record-list__item" style="--animation-order: 2">
+                            <div class="record-list__content">
+                                <h4 class="record-header" id="headingTwo">
                                     <div class="record-header__lf">
                                         <h4 class="record-header-title">DG真人</h4>
                                     </div>
                                     <div class="record-header__rt">
                                         <h4 class="record-header-text">2020年 3月11日 09:52:29</h4>
                                     </div>
-                                </div>
-                                <h3 class="record-title" data-target="collapse2">
+                                </h4>
+                                <h3 class="record-title" data-target="collapse1">
                                     <span class="record-title__text">
                                         <span class="record-title">充值金额</span>
                                         <span class="record-money">300.00</span>
@@ -245,42 +243,53 @@
                                         </div>
                                     </div>
                                 </h3>
-                                <div id="collapse2" class="record-description">
-                                    <div class="record-detail">
-                                        <div class="method">
-                                            <h5 class="method__title">交易方式</h5>
-                                            <p class="method__content">支付宝面对面扫码</p>
+                                <div class="record-info">
+                                    <ul class="record-info__list">
+                                        <div class="record-description accordion-collapse collapse" id="collapseTwo"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="record-detail accordion-body">
+                                                <!-- 成功才會出現入款前後 -->
+                                                <div class="deposit-details">
+                                                    <div class="deposit-details__col">
+                                                        <span class="deposit-details__col__title">入款前</span>
+                                                        <span class="deposit-details__col__money">1,200.00</span>
+                                                        <span>元</span>
+                                                    </div>
+                                                    <div class="deposit-details__col">
+                                                        <span class="deposit-details__col__title">入款后</span>
+                                                        <span class="deposit-details__col__money">1,500.00</span>
+                                                        <span>元</span>
+                                                    </div>
+                                                </div>
+                                                <div class="method">
+                                                    <h5 class="method__title">交易方式</h5>
+                                                    <p class="method__content">支付宝面对面扫码</p>
+                                                </div>
+                                                <div class="card-number">
+                                                    <h5 class="card-number__title">充值卡号：</h5>
+                                                    <p class="card-number__content">1069******30089</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-number">
-                                            <h5 class="card-number__title">充值卡号：</h5>
-                                            <p class="card-number__content">1069******30089</p>
+                                        <div class="record-arrow accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="record-arrow">
-                                    <div class="alert alert-warning">
-                                        <div class="alert__img">
-                                            <div class="alert__img__icon"></div>
-                                        </div>
-                                        <div class="alert__text">
-                                            如您遇到任何问题，请与客服联系
-                                        </div>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="record-cell__item" style="--animation-order: 3">
-                            <div class="record-cell__content">
-                                <div class="record-header">
+                        <div class="record-list__item" style="--animation-order: 3">
+                            <div class="record-list__content">
+                                <h4 class="record-header" id="headingThree">
                                     <div class="record-header__lf">
                                         <h4 class="record-header-title">DG真人</h4>
                                     </div>
                                     <div class="record-header__rt">
                                         <h4 class="record-header-text">2020年 3月11日 09:52:29</h4>
                                     </div>
-                                </div>
-                                <h3 class="record-title" data-target="collapse3">
+                                </h4>
+                                <h3 class="record-title" data-target="collapse1">
                                     <span class="record-title__text">
                                         <span class="record-title">充值金额</span>
                                         <span class="record-money">300.00</span>
@@ -292,31 +301,42 @@
                                         </div>
                                     </div>
                                 </h3>
-                                <div id="collapse3" class="record-description">
-                                    <div class="record-detail">
-                                        <div class="method">
-                                            <h5 class="method__title">交易方式</h5>
-                                            <p class="method__content">支付宝面对面扫码</p>
+                                <div class="record-info">
+                                    <ul class="record-info__list">
+                                        <div class="record-description accordion-collapse collapse" id="collapseThree"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="record-detail accordion-body">
+                                                <!-- 成功才會出現入款前後 -->
+                                                <div class="deposit-details">
+                                                    <div class="deposit-details__col">
+                                                        <span class="deposit-details__col__title">入款前</span>
+                                                        <span class="deposit-details__col__money">1,200.00</span>
+                                                        <span>元</span>
+                                                    </div>
+                                                    <div class="deposit-details__col">
+                                                        <span class="deposit-details__col__title">入款后</span>
+                                                        <span class="deposit-details__col__money">1,500.00</span>
+                                                        <span>元</span>
+                                                    </div>
+                                                </div>
+                                                <div class="method">
+                                                    <h5 class="method__title">交易方式</h5>
+                                                    <p class="method__content">支付宝面对面扫码</p>
+                                                </div>
+                                                <div class="card-number">
+                                                    <h5 class="card-number__title">充值卡号：</h5>
+                                                    <p class="card-number__content">1069******30089</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-number">
-                                            <h5 class="card-number__title">充值卡号：</h5>
-                                            <p class="card-number__content">1069******30089</p>
+                                        <div class="record-arrow accordion-button collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="record-arrow">
-                                    <div class="alert alert-warning">
-                                        <div class="alert__img">
-                                            <div class="alert__img__icon"></div>
-                                        </div>
-                                        <div class="alert__text">
-                                            如您遇到任何问题，请与客服联系
-                                        </div>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- inner-content -->
                     </div>
                 </div>
             </div>
@@ -335,91 +355,6 @@
     <script src="js/main.js"></script>
 
     <script>
-        //手風琴
-        var collapseSetting = {
-            openID: '',
-        }
-        function bindValue(obj, key, callback) {
-            var val = obj[key];
-            Object.defineProperty(obj, key, {
-                get: function () {
-                    return val;
-                },
-                set: function (value) {
-                    val = value;
-                    callback(val)
-                }
-            })
-        }
-        const collapseList = document.querySelectorAll('.record-cell__item .record-title');
-        const collapseArrow = document.querySelectorAll('.record-cell__item .record-arrow');
-        const collapseContent = document.querySelectorAll('.record-cell__item .record-description');
-        bindValue(collapseSetting, 'openID', function (key) {
-            menuClass(key)
-        });
-
-        function menuClass(value) {
-            const content = document.getElementById(value);
-            var setClasses = !content.previousElementSibling.classList.contains('active');
-            if (setClasses) {
-                openMessage.bind(content)()
-                content.previousElementSibling.classList.toggle("active");
-                content.parentElement.parentElement.classList.toggle("record-cell__item--open");
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        }
-
-        function removeItemHeight() {
-            collapseContent.forEach(function (item) {
-                item.parentElement.parentElement.classList.remove('record-cell__item--open')
-                item.style.maxHeight = null;
-            });
-            setClass(collapseList, 'remove', 'active');
-            setClass(collapseContent, 'remove', 'record-cell__item--open');
-        }
-
-        collapseList.forEach(function (item) {
-            item.addEventListener('click', function () {
-                openMessage.bind(this)()
-                const setClasses = !this.classList.contains('active');
-                const collapseItem = this.nextElementSibling.parentElement.parentElement;
-                removeItemHeight()
-                collapseSetting.openID = this.dataset.target;
-                if (setClasses) {
-                    this.classList.add("active");
-                    collapseItem.classList.add("record-cell__item--open");
-                    this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
-                } else {
-                    this.classList.remove("active");
-                    collapseItem.classList.remove("record-cell__item--open");
-                    this.nextElementSibling.style.maxHeight = null;
-                }
-            })
-        })
-
-        collapseArrow.forEach(function (item) {
-            item.addEventListener('click', function () {
-                const setClasses = !this.parentElement.classList.contains('active');
-                removeItemHeight();
-                collapseSetting.openID = this.previousElementSibling.id;
-                const content = document.getElementById(this.previousElementSibling.id);
-                content.previousElementSibling.classList.remove("active");
-                content.parentElement.parentElement.classList.remove("record-cell__item--open");
-                content.style.maxHeight = null;
-            });
-        });
-
-        function setClass(els, fnName, className) {
-            for (var i = 0; i < els.length; i++) {
-                els[i].classList[fnName](className);
-            }
-        }
-        //信封圖開啟
-        var openMessage = function () {
-            this.parentElement.parentElement.classList.add('record-cell__item--open');
-        }
-        //手風琴end//--------------------//--------------------//--------------------//--------------------//
-
         //show/hide
         function openTab(evt, tabName) {
             // Declare all variables
