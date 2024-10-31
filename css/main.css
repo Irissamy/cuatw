@@ -12721,6 +12721,32 @@ textarea {
   margin: 0;
 }
 
+.time-filter {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.time-filter__select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+.time-filter__select .form-control {
+  width: 100%;
+  font-size: 14px;
+  color: #515561;
+}
+.time-filter__text {
+  font-size: 14px;
+  color: #515561;
+  padding: 0px 8px;
+}
+
 .message-cell__item {
   display: block;
   margin-top: 8px;
@@ -15316,6 +15342,10 @@ textarea {
   .transfer-dialog {
     width: auto;
     max-width: 500px;
+  }
+  .input-popup {
+    width: 90%;
+    max-width: 540px;
   }
   .dialog,
   .dialog-ios {
