@@ -11671,35 +11671,6 @@ textarea {
   width: 0;
   height: 0;
 }
-.bind
-  .bind-card__item
-  .bank-card
-  .card-switch__input:checked
-  + .card-switch__slider {
-  background-color: #06c170;
-}
-.bind
-  .bind-card__item
-  .bank-card
-  .card-switch__input:checked
-  + .card-switch__slider
-  .slider-text {
-  left: 14px;
-}
-.bind
-  .bind-card__item
-  .bank-card
-  .card-switch__input:focus
-  + .card-switch__slider {
-  box-shadow: 0 0 1px #06c170;
-}
-.bind
-  .bind-card__item
-  .bank-card
-  .card-switch__input:checked
-  + .card-switch__slider:before {
-  transform: translateX(43px);
-}
 .bind .bind-card__item .bank-card .card-switch__slider {
   position: absolute;
   cursor: pointer;
@@ -11707,28 +11678,23 @@ textarea {
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 1000px;
-  background-color: #ff3d3d;
-  transition: 0.4s;
-}
-.bind .bind-card__item .bank-card .card-switch__slider:before {
-  position: absolute;
-  content: '';
-  height: 22px;
-  width: 22px;
-  left: 1px;
-  bottom: 1px;
-  border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #06c170;
   transition: 0.4s;
 }
 .bind .bind-card__item .bank-card .card-switch__slider .slider-text {
-  position: absolute;
-  top: 5px;
-  left: 30px;
   font-size: 12px;
   color: #ffffff;
   transition: 0.4s;
+}
+.bind .bind-card__item .bank-card .card-switch__slider.-warning {
+  background-color: #fc0;
+}
+.bind .bind-card__item .bank-card .card-switch__slider.-danger {
+  background-color: #ff3d3d;
 }
 .bind .alert {
   padding-top: 0px;

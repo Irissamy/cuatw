@@ -119,17 +119,6 @@
             opacity: 0
             width: 0
             height: 0
-            &:checked + .card-switch__slider 
-              background-color: #06c170
-              .slider-text 
-                left: 14px
-                // transform: translateX(-20px)            
-            
-            &:focus + .card-switch__slider 
-              box-shadow: 0 0 1px #06c170
-            
-            &:checked + .card-switch__slider:before 
-              transform: translateX(43px)
           
           &__slider 
             position: absolute
@@ -138,27 +127,21 @@
             left: 0
             right: 0
             bottom: 0
+            display: flex
+            justify-content: center
+            align-items: center
             border-radius: $bod-round
-            background-color: #ff3d3d
+            background-color: #06c170
             transition: 0.4s
-            &:before 
-              position: absolute
-              content: ''
-              height: 22px
-              width: 22px
-              left: 1px
-              bottom: 1px
-              border-radius: 50%
-              background-color: #ffffff
-              transition: 0.4s
-            
             .slider-text 
-              position: absolute
-              top: 5px
-              left: 30px
               font-size: 12px
               color: #ffffff
               transition: 0.4s
+            &.-warning
+              background-color: #fc0
+            &.-danger
+              background-color: #ff3d3d
+            
              
   .alert 
     padding-top: 0px
