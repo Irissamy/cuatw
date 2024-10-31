@@ -12472,13 +12472,14 @@ textarea {
 .time-filter {
   display: flex;
   align-items: center;
+  width: 100%;
   margin-top: 8px;
 }
 .time-filter__select {
   position: relative;
   display: flex;
   align-items: center;
-  flex: 1;
+  width: 45%;
   height: 36px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -12490,9 +12491,10 @@ textarea {
   color: #515561;
 }
 .time-filter__text {
+  width: 10%;
+  text-align: center;
   font-size: 14px;
   color: #515561;
-  padding: 0px 8px;
 }
 
 .message-cell__item {
