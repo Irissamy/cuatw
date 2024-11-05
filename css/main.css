@@ -5552,6 +5552,17 @@ textarea {
 .cell-list .cell__form .form-qr__text.-danger {
   color: #ff3d3d;
 }
+.cell-list .cell__form .form-qr__subtitle {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #515561;
+  font-weight: 600;
+}
+.cell-list .cell__form .form-qr__subtitle.-danger {
+  color: #ff3d3d;
+}
 .cell-list .cell__form .form-qr__btn {
   margin: 12px 0 0;
   padding: 0px 8px;
