@@ -389,3 +389,34 @@
       display: block
       width: 100%
  
+.btn-tab 
+    width: 100%
+    display: flex
+    padding-top: $space-sm
+    &__item 
+      width: 33.333%
+      height: 26px
+      min-width: 80px
+      color: #909abb
+      border-right: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 12px
+      position: relative
+      white-space: nowrap
+      background-color: hsla(0,0%,100%,0.7)
+      margin-right: $space-sm
+      border-radius: 4px
+      &--active 
+        color: #ffffff
+        background-color: #4d8aff
+        transition: 0.4s
+      
+      &:last-child 
+        margin-right: 0
+      
+      &--disabled 
+        background-color: #eceef4
+        color: #909abb
+        font-weight: normal

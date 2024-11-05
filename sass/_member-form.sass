@@ -480,6 +480,14 @@
         font-size: 16px
         color: #515561
         padding-bottom: 8px
+        .title-icon
+          width: 56px
+          height: auto
+          margin: auto
+          margin-bottom: 8px
+          &__img
+            display: block
+            width: 100%
       &__price
         text-align: center
         font-size: 20px
@@ -528,6 +536,9 @@
             opacity: 1
             animation: zoomIn 0.4s
             animation-fill-mode: forwards
+        &.-barcode
+          width: 100%
+          height: auto
       &__text 
         text-align: center
         margin-top: $space-md
@@ -536,6 +547,8 @@
         color: #515561
         font-weight: 600
         @include text-ellipsis
+        &.-danger
+          color: #ff3d3d
       &__btn 
         margin: $space-md 0 0
         padding:0px $space-sm
@@ -615,7 +628,8 @@
       padding: $space-lg
       resize: none
       outline: none
-    
+.cell-list + .pay-title
+  padding-top: 12px
 .captcha 
   display: flex
   align-items: center

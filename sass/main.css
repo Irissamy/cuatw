@@ -3387,6 +3387,41 @@ textarea {
   width: 100%;
 }
 
+.btn-tab {
+  width: 100%;
+  display: flex;
+  padding-top: 8px;
+}
+.btn-tab__item {
+  width: 33.333%;
+  height: 26px;
+  min-width: 80px;
+  color: #909abb;
+  border-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  position: relative;
+  white-space: nowrap;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  margin-right: 8px;
+  border-radius: 4px;
+}
+.btn-tab__item--active {
+  color: #ffffff;
+  background-color: #4d8aff;
+  transition: 0.4s;
+}
+.btn-tab__item:last-child {
+  margin-right: 0;
+}
+.btn-tab__item--disabled {
+  background-color: #eceef4;
+  color: #909abb;
+  font-weight: normal;
+}
+
 .carousel {
   position: relative;
   padding: 0px 16px;
@@ -5310,6 +5345,16 @@ textarea {
   color: #515561;
   padding-bottom: 8px;
 }
+.cell-list .cell__form .form-qr__title .title-icon {
+  width: 56px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 8px;
+}
+.cell-list .cell__form .form-qr__title .title-icon__img {
+  display: block;
+  width: 100%;
+}
 .cell-list .cell__form .form-qr__price {
   text-align: center;
   font-size: 20px;
@@ -5372,6 +5417,10 @@ textarea {
   animation: zoomIn 0.4s;
   animation-fill-mode: forwards;
 }
+.cell-list .cell__form .form-qr__img.-barcode {
+  width: 100%;
+  height: auto;
+}
 .cell-list .cell__form .form-qr__text {
   text-align: center;
   margin-top: 12px;
@@ -5382,6 +5431,9 @@ textarea {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.cell-list .cell__form .form-qr__text.-danger {
+  color: #ff3d3d;
 }
 .cell-list .cell__form .form-qr__btn {
   margin: 12px 0 0;
@@ -5481,6 +5533,10 @@ textarea {
   padding: 16px;
   resize: none;
   outline: none;
+}
+
+.cell-list + .pay-title {
+  padding-top: 12px;
 }
 
 .captcha {
@@ -10372,6 +10428,20 @@ textarea {
   padding-top: 8px;
 }
 
+.pay .btn-tab {
+  flex-wrap: wrap;
+}
+.pay .btn-tab__item {
+  flex-direction: column;
+  width: 32%;
+  height: 56px;
+  border-radius: 12px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.pay .btn-tab__item:nth-child(3n) {
+  margin-right: 0;
+}
 .pay__step {
   padding-top: 16px;
 }
