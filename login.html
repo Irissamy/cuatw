@@ -122,6 +122,50 @@
       </div>
     </div>
     <!-- 登入失敗 end -->
+    <!-- 新增推廣連結 start -->
+    <div id="show3" class="cardboard-dialog" style="display: none;">
+      <div class="dialog-mask">
+        <div class="dialog success">
+          <a href="javascript:void(0);" class="dialog__close" onclick="show3()">
+            <div class="dialog__close__img"></div>
+          </a>
+          <div class="dialog__header">
+            <div class="dialog__header__top">
+              <p class="amount-title">忘記密碼</p>
+            </div>
+          </div>
+          <div class="dialog__body">
+            <div class="dialog-amount-list">
+              <div class="dialog-amount-list__input">
+                <div class="com-cell -row">
+                  <div class="el-radio">
+                    <input type="radio" class="el-radio-input" id="radio1" name="radio">
+                    <label class="el-radio-style" for="radio1"></label>
+                    <label class="el-radio-label" for="radio1">
+                      <div class="label-title">忘記登入密碼</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="com-cell -row">
+                  <div class="el-radio">
+                    <input type="radio" class="el-radio-input" id="radio2" name="radio">
+                    <label class="el-radio-style" for="radio2"></label>
+                    <label class="el-radio-label" for="radio2">
+                      <div class="label-title">忘記提領密碼</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dialog__body-footer">
+            <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0)" onclick="show3()">確認</a>
+          </div>
+        </div>
+        <!--popup-->
+      </div>
+    </div>
+    <!-- 忘記密碼 end -->
 
     <div class="layout-content layout-content--full">
       <div class="entry">
@@ -202,7 +246,7 @@
                     <input type="checkbox" id="scales" name="scales" class="check-checkbox" />
                     <label for="scales" class="check-text">記住密碼</label>
                   </div>
-                  <a href="/login-forgot.html" class="com-cell__lf">
+                  <a href="javascript:void(0);" class="com-cell__lf" onclick="show3();">
                     <span class="cell-text">忘記密碼？</span></a>
                 </div>
                 <div class="contact">
@@ -325,6 +369,14 @@
     //popup-show/hide
     function show() {
       var x = document.getElementById('show');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+    function show3() {
+      var x = document.getElementById('show3');
       if (x.style.display === 'none') {
         x.style.display = 'block';
       } else {
