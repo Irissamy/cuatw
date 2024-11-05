@@ -4849,6 +4849,9 @@ textarea {
   color: #1d1d1f;
   padding: 16px;
 }
+.cell-list .cell-remind {
+  padding-top: 12px;
+}
 .cell-list .cell-remind__title {
   font-size: 14px;
   color: #ff3d3d;
@@ -4862,7 +4865,6 @@ textarea {
 }
 .cell-list .cell-remind-list__item {
   display: flex;
-  align-items: center;
   padding-bottom: 4px;
 }
 .cell-list .cell-remind-list__item .item-icon {
@@ -4886,6 +4888,9 @@ textarea {
   font-size: 12px;
   color: #909abb;
   padding-left: 4px;
+}
+.cell-list .cell-remind-list__item .item-text.-danger {
+  color: #ff3d3d;
 }
 .cell-list .cell-row {
   display: flex;
@@ -10334,6 +10339,37 @@ textarea {
 }
 .pay-group.-row .pay-group__item {
   border: none;
+}
+.pay-group .ui-tableviewcell {
+  background-image: none;
+  padding: 0px;
+}
+.pay-group .ui-tableviewcell__text {
+  flex-direction: row;
+  align-items: center;
+}
+.pay-group .ui-tableviewcell__text .title {
+  width: 25%;
+  color: #515561;
+}
+.pay-group .ui-tableviewcell__text .text {
+  max-width: 50%;
+  color: #909abb;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pay-group .ui-tableviewcell .detail {
+  padding-right: 0;
+}
+.pay-group .ui-tableviewcell .detail .btn {
+  font-size: 12px;
+  height: auto;
+  padding: 8px;
+}
+.pay-group .ui-tableviewcell:first-child .ui-tableviewcell__text {
+  padding-top: 8px;
 }
 
 .pay__step {

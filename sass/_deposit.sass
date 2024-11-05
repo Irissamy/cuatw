@@ -103,6 +103,29 @@
     display: flex
     .pay-group__item
       border: none
+  .ui-tableviewcell
+    background-image: none
+    padding: 0px
+    &__text
+      flex-direction: row
+      align-items: center
+      .title
+        width: 25%
+        color: #515561
+      .text
+        max-width: 50%
+        color: #909abb
+        margin: 0
+        @include text-ellipsis
+    .detail
+      padding-right: 0
+      .btn
+        font-size: 12px
+        height: auto
+        padding: 8px
+    &:first-child
+      .ui-tableviewcell__text
+        padding-top: 8px
 .pay 
   &__step 
     padding-top: $space-lg
