@@ -164,13 +164,15 @@
   z-index: 1
 
   &__item 
+    position: relative
+    overflow: hidden
     display: flex
+    flex-direction: column
+    justify-content: center
     align-items: center
     width: 100%
-    overflow: hidden
-    position: relative
     padding: $space-md
-    justify-content: center
+
     & + .member-menu-top__item:after 
       content: ''
       display: block
@@ -186,9 +188,8 @@
     .menu-img-wrap 
       display: flex
       flex-shrink: 0
-      width: 40px
-      height: 40px
-      margin-right: $space-sm
+      width: 32px
+      height: 32px
       &__img         
         display: block
         width: 100%
@@ -200,9 +201,10 @@
     .menu-title 
       text-align: left
       color: #263b8a
-      font-size: 14px
+      font-size: 12px
       font-weight: 600
       margin: 0
+      padding-top: 4px
     
   
 
@@ -248,6 +250,30 @@
       background-image: none
       &:last-child
         border-bottom: 0px 
+
+.member-menu
+  &__item
+    .item-cell
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      border-radius: 16px
+      padding: 12px
+      background-clip: padding-box, border-box
+      background-origin: padding-box, border-box
+      background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%)
+      border: 2px rgba(255, 255, 255, 0.4392156863) solid
+      &__icon
+        display: flex
+        width: 40px
+      &__title
+        margin: 0
+        padding-top: 8px
+        font-size: 14px
+        color: #ffffff
+
+
 .img-board 
   height: 176px - 44px * 2
   background-size: cover
