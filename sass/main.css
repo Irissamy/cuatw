@@ -10032,6 +10032,7 @@ textarea {
   background-origin: padding-box, border-box;
   background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%);
   border: 2px rgba(255, 255, 255, 0.4392156863) solid;
+  box-shadow: #496488 4px 4px 0px 0px;
 }
 .member-menu__item .item-cell__icon {
   display: flex;
