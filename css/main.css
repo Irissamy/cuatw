@@ -3414,6 +3414,7 @@ textarea {
   width: 100%;
   display: flex;
   padding-top: 8px;
+  overflow-x: auto;
 }
 .btn-tab__item {
   width: 33.333%;
@@ -9511,7 +9512,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;
+  border-radius: 8px;
   z-index: 30;
 }
 .channel-list__item .item-mask__title,
