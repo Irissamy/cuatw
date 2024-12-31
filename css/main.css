@@ -9446,7 +9446,7 @@ textarea {
   text-overflow: ellipsis;
 }
 .sidebar__list .list-item.active {
-  background: url('../images/common/demo/index/_sidebar/icon/download_shadow_active@2x.png')
+  background: url('../images/common/demo/index/sidebar/icon/download_shadow_active@2x.png')
     no-repeat center;
   background-size: cover;
   border: 2px #fdeed1 solid;
